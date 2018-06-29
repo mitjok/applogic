@@ -12,6 +12,7 @@ gem 'jwt-multisig',                     '~> 1.0'
 gem 'memoist',                          '~> 0.16'
 gem 'mini_racer',                       '~> 0.1', require: false
 gem 'mysql2',                           '>= 0.3.18', '< 0.5'
+gem 'dry-monads',                       '~> 1.0'
 gem 'puma',                             '~> 3.7'
 gem 'rails',                            '~> 5.2'
 gem 'sass-rails',                       '~> 5.0'
@@ -32,6 +33,7 @@ group :test do
   gem 'shoulda-matchers',   '~> 3.1'
   gem 'simplecov',          '0.12.0'
   gem 'webmock',            '~> 3.3'
+  gem 'vcr',                '~> 4.0'
 end
 
 group :development do
