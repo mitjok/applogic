@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 28 Jun 2018 16:43:52 GMT
+      - Sat, 30 Jun 2018 14:23:11 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -27,12 +27,12 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d15da149c10a260fe5ebf5c6112d60d6d1530204231; expires=Fri, 28-Jun-19
-        16:43:51 GMT; path=/; domain=.coinmarketcap.com; HttpOnly; Secure
+      - __cfduid=d1aa4c1055245a50483876b0b547996ee1530368591; expires=Sun, 30-Jun-19
+        14:23:11 GMT; path=/; domain=.coinmarketcap.com; HttpOnly; Secure
       Access-Control-Allow-Origin:
       - "*"
       Cf-Cache-Status:
-      - EXPIRED
+      - HIT
       Vary:
       - Accept-Encoding
       Expect-Ct:
@@ -40,7 +40,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 43219d602ef88ab6-KBP
+      - 43314a132e54822b-KBP
     body:
       encoding: ASCII-8BIT
       string: "{\n    \"data\": [\n        {\n            \"id\": 1, \n            \"name\":
@@ -96,7 +96,7 @@ http_interactions:
         \"emerald\"\n        }, \n        {\n            \"id\": 51, \n            \"name\":
         \"GlobalCoin\", \n            \"symbol\": \"GLC\", \n            \"website_slug\":
         \"globalcoin\"\n        }, \n        {\n            \"id\": 52, \n            \"name\":
-        \"Ripple\", \n            \"symbol\": \"XRP\", \n            \"website_slug\":
+        \"XRP\", \n            \"symbol\": \"XRP\", \n            \"website_slug\":
         \"ripple\"\n        }, \n        {\n            \"id\": 53, \n            \"name\":
         \"Quark\", \n            \"symbol\": \"QRK\", \n            \"website_slug\":
         \"quark\"\n        }, \n        {\n            \"id\": 56, \n            \"name\":
@@ -3300,9 +3300,956 @@ http_interactions:
         \"Origin Sport\", \n            \"symbol\": \"ORS\", \n            \"website_slug\":
         \"origin-sport\"\n        }, \n        {\n            \"id\": 2880, \n            \"name\":
         \"Rate3\", \n            \"symbol\": \"RTE\", \n            \"website_slug\":
-        \"rate3\"\n        }\n    ], \n    \"metadata\": {\n        \"timestamp\":
-        1530203891, \n        \"num_cryptocurrencies\": 1596, \n        \"error\":
+        \"rate3\"\n        }, \n        {\n            \"id\": 2881, \n            \"name\":
+        \"Distributed Credit Chain\", \n            \"symbol\": \"DCC\", \n            \"website_slug\":
+        \"distributed-credit-chain\"\n        }\n    ], \n    \"metadata\": {\n        \"timestamp\":
+        1530368154, \n        \"num_cryptocurrencies\": 1597, \n        \"error\":
         null\n    }\n}"
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 16:43:52 GMT
+  recorded_at: Sat, 30 Jun 2018 14:23:12 GMT
+- request:
+    method: get
+    uri: https://api.coinmarketcap.com/v1/ticker//?convert=EUR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 Jun 2018 14:23:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7cf6dca42f5fbea7e990329f424bbd6e1530368592; expires=Sun, 30-Jun-19
+        14:23:12 GMT; path=/; domain=.coinmarketcap.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - EXPIRED
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43314a148fa78ae6-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: "[\n    {\n        \"id\": \"bitcoin\", \n        \"name\": \"Bitcoin\",
+        \n        \"symbol\": \"BTC\", \n        \"rank\": \"1\", \n        \"price_usd\":
+        \"6409.73\", \n        \"price_btc\": \"1.0\", \n        \"24h_volume_usd\":
+        \"4804450000.0\", \n        \"market_cap_usd\": \"109758774331\", \n        \"available_supply\":
+        \"17123775.0\", \n        \"total_supply\": \"17123775.0\", \n        \"max_supply\":
+        \"21000000.0\", \n        \"percent_change_1h\": \"-0.31\", \n        \"percent_change_24h\":
+        \"8.65\", \n        \"percent_change_7d\": \"4.5\", \n        \"last_updated\":
+        \"1530368543\", \n        \"price_eur\": \"5477.69944024\", \n        \"24h_volume_eur\":
+        \"4105841131.48\", \n        \"market_cap_eur\": \"93798892732.0\"\n    },
+        \n    {\n        \"id\": \"ethereum\", \n        \"name\": \"Ethereum\", \n
+        \       \"symbol\": \"ETH\", \n        \"rank\": \"2\", \n        \"price_usd\":
+        \"453.204\", \n        \"price_btc\": \"0.0710962\", \n        \"24h_volume_usd\":
+        \"1601500000.0\", \n        \"market_cap_usd\": \"45501147782.0\", \n        \"available_supply\":
+        \"100398822.0\", \n        \"total_supply\": \"100398822.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.77\", \n        \"percent_change_24h\":
+        \"10.08\", \n        \"percent_change_7d\": \"-4.04\", \n        \"last_updated\":
+        \"1530368533\", \n        \"price_eur\": \"387.30419177\", \n        \"24h_volume_eur\":
+        \"1368627953.68\", \n        \"market_cap_eur\": \"38884884657.0\"\n    },
+        \n    {\n        \"id\": \"ripple\", \n        \"name\": \"XRP\", \n        \"symbol\":
+        \"XRP\", \n        \"rank\": \"3\", \n        \"price_usd\": \"0.465623\",
+        \n        \"price_btc\": \"0.00007304\", \n        \"24h_volume_usd\": \"363121000.0\",
+        \n        \"market_cap_usd\": \"18281335545.0\", \n        \"available_supply\":
+        \"39262097329.0\", \n        \"total_supply\": \"99991924336.0\", \n        \"max_supply\":
+        \"100000000000\", \n        \"percent_change_1h\": \"-0.95\", \n        \"percent_change_24h\":
+        \"7.78\", \n        \"percent_change_7d\": \"-4.5\", \n        \"last_updated\":
+        \"1530368524\", \n        \"price_eur\": \"0.397917361\", \n        \"24h_volume_eur\":
+        \"310320044.439\", \n        \"market_cap_eur\": \"15623070157.0\"\n    },
+        \n    {\n        \"id\": \"bitcoin-cash\", \n        \"name\": \"Bitcoin Cash\",
+        \n        \"symbol\": \"BCH\", \n        \"rank\": \"4\", \n        \"price_usd\":
+        \"746.088\", \n        \"price_btc\": \"0.117042\", \n        \"24h_volume_usd\":
+        \"576889000.0\", \n        \"market_cap_usd\": \"12841386873.0\", \n        \"available_supply\":
+        \"17211625.0\", \n        \"total_supply\": \"17211625.0\", \n        \"max_supply\":
+        \"21000000.0\", \n        \"percent_change_1h\": \"-0.99\", \n        \"percent_change_24h\":
+        \"12.98\", \n        \"percent_change_7d\": \"-1.26\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"637.600307653\", \n        \"24h_volume_eur\":
+        \"493004315.686\", \n        \"market_cap_eur\": \"10974137395.0\"\n    },
+        \n    {\n        \"id\": \"eos\", \n        \"name\": \"EOS\", \n        \"symbol\":
+        \"EOS\", \n        \"rank\": \"5\", \n        \"price_usd\": \"8.02524\",
+        \n        \"price_btc\": \"0.00125895\", \n        \"24h_volume_usd\": \"850532000.0\",
+        \n        \"market_cap_usd\": \"7191814751.0\", \n        \"available_supply\":
+        \"896149492.0\", \n        \"total_supply\": \"900000000.0\", \n        \"max_supply\":
+        \"1000000000.0\", \n        \"percent_change_1h\": \"-1.31\", \n        \"percent_change_24h\":
+        \"9.86\", \n        \"percent_change_7d\": \"-3.7\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"6.8583002179\", \n        \"24h_volume_eur\":
+        \"726857240.525\", \n        \"market_cap_eur\": \"6146062257.0\"\n    },
+        \n    {\n        \"id\": \"litecoin\", \n        \"name\": \"Litecoin\", \n
+        \       \"symbol\": \"LTC\", \n        \"rank\": \"6\", \n        \"price_usd\":
+        \"82.1538\", \n        \"price_btc\": \"0.0128878\", \n        \"24h_volume_usd\":
+        \"308723000.0\", \n        \"market_cap_usd\": \"4699425004.0\", \n        \"available_supply\":
+        \"57202771.0\", \n        \"total_supply\": \"57202771.0\", \n        \"max_supply\":
+        \"84000000.0\", \n        \"percent_change_1h\": \"-0.24\", \n        \"percent_change_24h\":
+        \"11.49\", \n        \"percent_change_7d\": \"-1.28\", \n        \"last_updated\":
+        \"1530368521\", \n        \"price_eur\": \"70.2079220613\", \n        \"24h_volume_eur\":
+        \"263831987.352\", \n        \"market_cap_eur\": \"4016087684.0\"\n    },
+        \n    {\n        \"id\": \"stellar\", \n        \"name\": \"Stellar\", \n
+        \       \"symbol\": \"XLM\", \n        \"rank\": \"7\", \n        \"price_usd\":
+        \"0.195746\", \n        \"price_btc\": \"0.00003073\", \n        \"24h_volume_usd\":
+        \"46753800.0\", \n        \"market_cap_usd\": \"3672280870.0\", \n        \"available_supply\":
+        \"18760438885.0\", \n        \"total_supply\": \"104065507794\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.71\", \n        \"percent_change_24h\":
+        \"11.75\", \n        \"percent_change_7d\": \"-2.27\", \n        \"last_updated\":
+        \"1530368584\", \n        \"price_eur\": \"0.167282827\", \n        \"24h_volume_eur\":
+        \"39955390.3346\", \n        \"market_cap_eur\": \"3138299252.0\"\n    },
+        \n    {\n        \"id\": \"cardano\", \n        \"name\": \"Cardano\", \n
+        \       \"symbol\": \"ADA\", \n        \"rank\": \"8\", \n        \"price_usd\":
+        \"0.135914\", \n        \"price_btc\": \"0.00002132\", \n        \"24h_volume_usd\":
+        \"106791000.0\", \n        \"market_cap_usd\": \"3523851865.0\", \n        \"available_supply\":
+        \"25927070538.0\", \n        \"total_supply\": \"31112483745.0\", \n        \"max_supply\":
+        \"45000000000.0\", \n        \"percent_change_1h\": \"-0.67\", \n        \"percent_change_24h\":
+        \"17.28\", \n        \"percent_change_7d\": \"-1.09\", \n        \"last_updated\":
+        \"1530368539\", \n        \"price_eur\": \"0.1161509208\", \n        \"24h_volume_eur\":
+        \"91262658.6335\", \n        \"market_cap_eur\": \"3011453117.0\"\n    },
+        \n    {\n        \"id\": \"iota\", \n        \"name\": \"IOTA\", \n        \"symbol\":
+        \"MIOTA\", \n        \"rank\": \"9\", \n        \"price_usd\": \"1.00247\",
+        \n        \"price_btc\": \"0.00015726\", \n        \"24h_volume_usd\": \"54104100.0\",
+        \n        \"market_cap_usd\": \"2786395723.0\", \n        \"available_supply\":
+        \"2779530283.0\", \n        \"total_supply\": \"2779530283.0\", \n        \"max_supply\":
+        \"2779530283.0\", \n        \"percent_change_1h\": \"-1.0\", \n        \"percent_change_24h\":
+        \"10.03\", \n        \"percent_change_7d\": \"-0.7\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"0.8567021322\", \n        \"24h_volume_eur\":
+        \"46236892.7061\", \n        \"market_cap_eur\": \"2381229520.0\"\n    },
+        \n    {\n        \"id\": \"tether\", \n        \"name\": \"Tether\", \n        \"symbol\":
+        \"USDT\", \n        \"rank\": \"10\", \n        \"price_usd\": \"1.00171\",
+        \n        \"price_btc\": \"0.00015727\", \n        \"24h_volume_usd\": \"2805150000.0\",
+        \n        \"market_cap_usd\": \"2711769556.0\", \n        \"available_supply\":
+        \"2707140346.0\", \n        \"total_supply\": \"3080109502.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.04\", \n        \"percent_change_24h\":
+        \"0.33\", \n        \"percent_change_7d\": \"-0.04\", \n        \"last_updated\":
+        \"1530368586\", \n        \"price_eur\": \"0.8560526428\", \n        \"24h_volume_eur\":
+        \"2397256761.95\", \n        \"market_cap_eur\": \"2317454647.0\"\n    },
+        \n    {\n        \"id\": \"tron\", \n        \"name\": \"TRON\", \n        \"symbol\":
+        \"TRX\", \n        \"rank\": \"11\", \n        \"price_usd\": \"0.0383659\",
+        \n        \"price_btc\": \"0.00000602\", \n        \"24h_volume_usd\": \"209118000.0\",
+        \n        \"market_cap_usd\": \"2522485477.0\", \n        \"available_supply\":
+        \"65748111645.0\", \n        \"total_supply\": \"100000000000\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.56\", \n        \"percent_change_24h\":
+        \"8.54\", \n        \"percent_change_7d\": \"-12.3\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"0.032787164\", \n        \"24h_volume_eur\":
+        \"178710421.741\", \n        \"market_cap_eur\": \"2155694122.0\"\n    },
+        \n    {\n        \"id\": \"monero\", \n        \"name\": \"Monero\", \n        \"symbol\":
+        \"XMR\", \n        \"rank\": \"12\", \n        \"price_usd\": \"134.458\",
+        \n        \"price_btc\": \"0.0211102\", \n        \"24h_volume_usd\": \"37962300.0\",
+        \n        \"market_cap_usd\": \"2175666695.0\", \n        \"available_supply\":
+        \"16181013.0\", \n        \"total_supply\": \"16181013.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"1.63\", \n        \"percent_change_24h\":
+        \"11.96\", \n        \"percent_change_7d\": \"16.42\", \n        \"last_updated\":
+        \"1530368584\", \n        \"price_eur\": \"114.906635901\", \n        \"24h_volume_eur\":
+        \"32442250.9935\", \n        \"market_cap_eur\": \"1859305811.0\"\n    },
+        \n    {\n        \"id\": \"neo\", \n        \"name\": \"NEO\", \n        \"symbol\":
+        \"NEO\", \n        \"rank\": \"13\", \n        \"price_usd\": \"31.1372\",
+        \n        \"price_btc\": \"0.00488463\", \n        \"24h_volume_usd\": \"77051600.0\",
+        \n        \"market_cap_usd\": \"2023918000.0\", \n        \"available_supply\":
+        \"65000000.0\", \n        \"total_supply\": \"100000000.0\", \n        \"max_supply\":
+        \"100000000.0\", \n        \"percent_change_1h\": \"-0.87\", \n        \"percent_change_24h\":
+        \"11.6\", \n        \"percent_change_7d\": \"-7.65\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"26.6095799684\", \n        \"24h_volume_eur\":
+        \"65847626.3727\", \n        \"market_cap_eur\": \"1729622698.0\"\n    },
+        \n    {\n        \"id\": \"dash\", \n        \"name\": \"Dash\", \n        \"symbol\":
+        \"DASH\", \n        \"rank\": \"14\", \n        \"price_usd\": \"241.844\",
+        \n        \"price_btc\": \"0.0379392\", \n        \"24h_volume_usd\": \"145285000.0\",
+        \n        \"market_cap_usd\": \"1973996609.0\", \n        \"available_supply\":
+        \"8162272.0\", \n        \"total_supply\": \"8162272.0\", \n        \"max_supply\":
+        \"18900000.0\", \n        \"percent_change_1h\": \"-0.09\", \n        \"percent_change_24h\":
+        \"10.1\", \n        \"percent_change_7d\": \"-0.84\", \n        \"last_updated\":
+        \"1530368524\", \n        \"price_eur\": \"206.677776354\", \n        \"24h_volume_eur\":
+        \"124159295.817\", \n        \"market_cap_eur\": \"1686960312.0\"\n    },
+        \n    {\n        \"id\": \"binance-coin\", \n        \"name\": \"Binance Coin\",
+        \n        \"symbol\": \"BNB\", \n        \"rank\": \"15\", \n        \"price_usd\":
+        \"14.5775\", \n        \"price_btc\": \"0.00228684\", \n        \"24h_volume_usd\":
+        \"74050400.0\", \n        \"market_cap_usd\": \"1662436907.0\", \n        \"available_supply\":
+        \"114041290.0\", \n        \"total_supply\": \"194972068.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.98\", \n        \"percent_change_24h\":
+        \"4.74\", \n        \"percent_change_7d\": \"-7.38\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"12.457804555\", \n        \"24h_volume_eur\":
+        \"63282826.988\", \n        \"market_cap_eur\": \"1420704103.0\"\n    }, \n
+        \   {\n        \"id\": \"ethereum-classic\", \n        \"name\": \"Ethereum
+        Classic\", \n        \"symbol\": \"ETC\", \n        \"rank\": \"16\", \n        \"price_usd\":
+        \"15.9823\", \n        \"price_btc\": \"0.00250722\", \n        \"24h_volume_usd\":
+        \"276641000.0\", \n        \"market_cap_usd\": \"1641044520.0\", \n        \"available_supply\":
+        \"102678871.0\", \n        \"total_supply\": \"102678871.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-1.68\", \n        \"percent_change_24h\":
+        \"9.38\", \n        \"percent_change_7d\": \"8.79\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"13.6583344016\", \n        \"24h_volume_eur\":
+        \"236414989.531\", \n        \"market_cap_eur\": \"1402422356.0\"\n    },
+        \n    {\n        \"id\": \"nem\", \n        \"name\": \"NEM\", \n        \"symbol\":
+        \"XEM\", \n        \"rank\": \"17\", \n        \"price_usd\": \"0.163455\",
+        \n        \"price_btc\": \"0.00002566\", \n        \"24h_volume_usd\": \"20111400.0\",
+        \n        \"market_cap_usd\": \"1471095000.0\", \n        \"available_supply\":
+        \"8999999999.0\", \n        \"total_supply\": \"8999999999.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.93\", \n        \"percent_change_24h\":
+        \"12.8\", \n        \"percent_change_7d\": \"-0.52\", \n        \"last_updated\":
+        \"1530368585\", \n        \"price_eur\": \"0.1396872196\", \n        \"24h_volume_eur\":
+        \"17187027.3042\", \n        \"market_cap_eur\": \"1257184976.0\"\n    },
+        \n    {\n        \"id\": \"vechain\", \n        \"name\": \"VeChain\", \n
+        \       \"symbol\": \"VEN\", \n        \"rank\": \"18\", \n        \"price_usd\":
+        \"2.62389\", \n        \"price_btc\": \"0.00041162\", \n        \"24h_volume_usd\":
+        \"59073800.0\", \n        \"market_cap_usd\": \"1448344635.0\", \n        \"available_supply\":
+        \"551983747.0\", \n        \"total_supply\": \"873378637.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.89\", \n        \"percent_change_24h\":
+        \"9.02\", \n        \"percent_change_7d\": \"-5.28\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"2.2423535444\", \n        \"24h_volume_eur\":
+        \"50483955.0485\", \n        \"market_cap_eur\": \"1237742712.0\"\n    },
+        \n    {\n        \"id\": \"ontology\", \n        \"name\": \"Ontology\", \n
+        \       \"symbol\": \"ONT\", \n        \"rank\": \"19\", \n        \"price_usd\":
+        \"5.27732\", \n        \"price_btc\": \"0.00082788\", \n        \"24h_volume_usd\":
+        \"95231000.0\", \n        \"market_cap_usd\": \"798417220.0\", \n        \"available_supply\":
+        \"151292175.0\", \n        \"total_supply\": \"1000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.78\", \n        \"percent_change_24h\":
+        \"10.07\", \n        \"percent_change_7d\": \"3.65\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"4.5099517156\", \n        \"24h_volume_eur\":
+        \"81383583.3013\", \n        \"market_cap_eur\": \"682320404.0\"\n    }, \n
+        \   {\n        \"id\": \"omisego\", \n        \"name\": \"OmiseGO\", \n        \"symbol\":
+        \"OMG\", \n        \"rank\": \"20\", \n        \"price_usd\": \"7.49869\",
+        \n        \"price_btc\": \"0.00117635\", \n        \"24h_volume_usd\": \"23796400.0\",
+        \n        \"market_cap_usd\": \"765185462.0\", \n        \"available_supply\":
+        \"102042552.0\", \n        \"total_supply\": \"140245398.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.42\", \n        \"percent_change_24h\":
+        \"10.64\", \n        \"percent_change_7d\": \"-7.51\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"6.4083151733\", \n        \"24h_volume_eur\":
+        \"20336196.2142\", \n        \"market_cap_eur\": \"653920833.0\"\n    }, \n
+        \   {\n        \"id\": \"qtum\", \n        \"name\": \"Qtum\", \n        \"symbol\":
+        \"QTUM\", \n        \"rank\": \"21\", \n        \"price_usd\": \"8.58342\",
+        \n        \"price_btc\": \"0.00134652\", \n        \"24h_volume_usd\": \"239572000.0\",
+        \n        \"market_cap_usd\": \"761044780.0\", \n        \"available_supply\":
+        \"88664516.0\", \n        \"total_supply\": \"100664516.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.57\", \n        \"percent_change_24h\":
+        \"9.77\", \n        \"percent_change_7d\": \"-2.78\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"7.3353159851\", \n        \"24h_volume_eur\":
+        \"204736144.939\", \n        \"market_cap_eur\": \"650382242.0\"\n    }, \n
+        \   {\n        \"id\": \"zcash\", \n        \"name\": \"Zcash\", \n        \"symbol\":
+        \"ZEC\", \n        \"rank\": \"22\", \n        \"price_usd\": \"168.979\",
+        \n        \"price_btc\": \"0.0265085\", \n        \"24h_volume_usd\": \"41554800.0\",
+        \n        \"market_cap_usd\": \"718385703.0\", \n        \"available_supply\":
+        \"4251331.0\", \n        \"total_supply\": \"4251331.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.96\", \n        \"percent_change_24h\":
+        \"12.42\", \n        \"percent_change_7d\": \"0.0\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"144.407981883\", \n        \"24h_volume_eur\":
+        \"35512370.2089\", \n        \"market_cap_eur\": \"613926166.0\"\n    }, \n
+        \   {\n        \"id\": \"icon\", \n        \"name\": \"ICON\", \n        \"symbol\":
+        \"ICX\", \n        \"rank\": \"23\", \n        \"price_usd\": \"1.57508\",
+        \n        \"price_btc\": \"0.00024709\", \n        \"24h_volume_usd\": \"40689500.0\",
+        \n        \"market_cap_usd\": \"610235355.0\", \n        \"available_supply\":
+        \"387431340.0\", \n        \"total_supply\": \"400228740.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.59\", \n        \"percent_change_24h\":
+        \"11.11\", \n        \"percent_change_7d\": \"-9.36\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"1.3460496518\", \n        \"24h_volume_eur\":
+        \"34772892.3642\", \n        \"market_cap_eur\": \"521501820.0\"\n    }, \n
+        \   {\n        \"id\": \"lisk\", \n        \"name\": \"Lisk\", \n        \"symbol\":
+        \"LSK\", \n        \"rank\": \"24\", \n        \"price_usd\": \"5.35203\",
+        \n        \"price_btc\": \"0.0008396\", \n        \"24h_volume_usd\": \"6731020.0\",
+        \n        \"market_cap_usd\": \"575283197.0\", \n        \"available_supply\":
+        \"107488784.0\", \n        \"total_supply\": \"122735232.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.47\", \n        \"percent_change_24h\":
+        \"11.65\", \n        \"percent_change_7d\": \"-3.62\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"4.573798231\", \n        \"24h_volume_eur\":
+        \"5752271.07636\", \n        \"market_cap_eur\": \"491632010.0\"\n    }, \n
+        \   {\n        \"id\": \"bytecoin-bcn\", \n        \"name\": \"Bytecoin\",
+        \n        \"symbol\": \"BCN\", \n        \"rank\": \"25\", \n        \"price_usd\":
+        \"0.00312798\", \n        \"price_btc\": \"0.00000049\", \n        \"24h_volume_usd\":
+        \"15812900.0\", \n        \"market_cap_usd\": \"575205748.0\", \n        \"available_supply\":
+        \"183890481254\", \n        \"total_supply\": \"183890481254\", \n        \"max_supply\":
+        \"184470000000\", \n        \"percent_change_1h\": \"-1.04\", \n        \"percent_change_24h\":
+        \"28.92\", \n        \"percent_change_7d\": \"9.03\", \n        \"last_updated\":
+        \"1530368585\", \n        \"price_eur\": \"0.0026731445\", \n        \"24h_volume_eur\":
+        \"13513566.6368\", \n        \"market_cap_eur\": \"491565823.0\"\n    }, \n
+        \   {\n        \"id\": \"zilliqa\", \n        \"name\": \"Zilliqa\", \n        \"symbol\":
+        \"ZIL\", \n        \"rank\": \"26\", \n        \"price_usd\": \"0.072521\",
+        \n        \"price_btc\": \"0.00001138\", \n        \"24h_volume_usd\": \"56866300.0\",
+        \n        \"market_cap_usd\": \"549411368.0\", \n        \"available_supply\":
+        \"7575893444.0\", \n        \"total_supply\": \"12600000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-1.84\", \n        \"percent_change_24h\":
+        \"19.13\", \n        \"percent_change_7d\": \"5.64\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"0.0619758151\", \n        \"24h_volume_eur\":
+        \"48597444.772\", \n        \"market_cap_eur\": \"469522171.0\"\n    }, \n
+        \   {\n        \"id\": \"decred\", \n        \"name\": \"Decred\", \n        \"symbol\":
+        \"DCR\", \n        \"rank\": \"27\", \n        \"price_usd\": \"68.0852\",
+        \n        \"price_btc\": \"0.0106808\", \n        \"24h_volume_usd\": \"3591190.0\",
+        \n        \"market_cap_usd\": \"486519335.0\", \n        \"available_supply\":
+        \"7145743.0\", \n        \"total_supply\": \"7565743.0\", \n        \"max_supply\":
+        \"21000000.0\", \n        \"percent_change_1h\": \"-0.46\", \n        \"percent_change_24h\":
+        \"14.6\", \n        \"percent_change_7d\": \"-7.68\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"58.1850190147\", \n        \"24h_volume_eur\":
+        \"3068999.70089\", \n        \"market_cap_eur\": \"415775187.0\"\n    }, \n
+        \   {\n        \"id\": \"bitcoin-gold\", \n        \"name\": \"Bitcoin Gold\",
+        \n        \"symbol\": \"BTG\", \n        \"rank\": \"28\", \n        \"price_usd\":
+        \"26.2374\", \n        \"price_btc\": \"0.00411598\", \n        \"24h_volume_usd\":
+        \"12810000.0\", \n        \"market_cap_usd\": \"448560785.0\", \n        \"available_supply\":
+        \"17096236.0\", \n        \"total_supply\": \"17196236.0\", \n        \"max_supply\":
+        \"21000000.0\", \n        \"percent_change_1h\": \"-0.25\", \n        \"percent_change_24h\":
+        \"12.1\", \n        \"percent_change_7d\": \"0.52\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"22.4222535572\", \n        \"24h_volume_eur\":
+        \"10947314.4469\", \n        \"market_cap_eur\": \"383336140.0\"\n    }, \n
+        \   {\n        \"id\": \"aeternity\", \n        \"name\": \"Aeternity\", \n
+        \       \"symbol\": \"AE\", \n        \"rank\": \"29\", \n        \"price_usd\":
+        \"1.91122\", \n        \"price_btc\": \"0.00029982\", \n        \"24h_volume_usd\":
+        \"7111960.0\", \n        \"market_cap_usd\": \"445353387.0\", \n        \"available_supply\":
+        \"233020472.0\", \n        \"total_supply\": \"273685830.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.13\", \n        \"percent_change_24h\":
+        \"10.88\", \n        \"percent_change_7d\": \"-0.16\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"1.6333119686\", \n        \"24h_volume_eur\":
+        \"6077819.08302\", \n        \"market_cap_eur\": \"380595126.0\"\n    }, \n
+        \   {\n        \"id\": \"0x\", \n        \"name\": \"0x\", \n        \"symbol\":
+        \"ZRX\", \n        \"rank\": \"30\", \n        \"price_usd\": \"0.8306\",
+        \n        \"price_btc\": \"0.0001303\", \n        \"24h_volume_usd\": \"21946600.0\",
+        \n        \"market_cap_usd\": \"442768202.0\", \n        \"available_supply\":
+        \"533070313.0\", \n        \"total_supply\": \"1000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"5.31\", \n        \"percent_change_24h\":
+        \"40.65\", \n        \"percent_change_7d\": \"16.96\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"0.7098235269\", \n        \"24h_volume_eur\":
+        \"18755373.2427\", \n        \"market_cap_eur\": \"378385850.0\"\n    }, \n
+        \   {\n        \"id\": \"siacoin\", \n        \"name\": \"Siacoin\", \n        \"symbol\":
+        \"SC\", \n        \"rank\": \"31\", \n        \"price_usd\": \"0.0107844\",
+        \n        \"price_btc\": \"0.00000169\", \n        \"24h_volume_usd\": \"14761500.0\",
+        \n        \"market_cap_usd\": \"381533984.0\", \n        \"available_supply\":
+        \"35378322719.0\", \n        \"total_supply\": \"35378322719.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.75\", \n        \"percent_change_24h\":
+        \"15.5\", \n        \"percent_change_7d\": \"-2.71\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"0.0092162543\", \n        \"24h_volume_eur\":
+        \"12615049.3526\", \n        \"market_cap_eur\": \"326055620.0\"\n    }, \n
+        \   {\n        \"id\": \"augur\", \n        \"name\": \"Augur\", \n        \"symbol\":
+        \"REP\", \n        \"rank\": \"32\", \n        \"price_usd\": \"34.4432\",
+        \n        \"price_btc\": \"0.00540326\", \n        \"24h_volume_usd\": \"5865770.0\",
+        \n        \"market_cap_usd\": \"378875200.0\", \n        \"available_supply\":
+        \"11000000.0\", \n        \"total_supply\": \"11000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.07\", \n        \"percent_change_24h\":
+        \"12.88\", \n        \"percent_change_7d\": \"12.56\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"29.4348587788\", \n        \"24h_volume_eur\":
+        \"5012835.9612\", \n        \"market_cap_eur\": \"323783447.0\"\n    }, \n
+        \   {\n        \"id\": \"bytom\", \n        \"name\": \"Bytom\", \n        \"symbol\":
+        \"BTM\", \n        \"rank\": \"33\", \n        \"price_usd\": \"0.369653\",
+        \n        \"price_btc\": \"0.00005799\", \n        \"24h_volume_usd\": \"80827400.0\",
+        \n        \"market_cap_usd\": \"370576865.0\", \n        \"available_supply\":
+        \"1002499275.0\", \n        \"total_supply\": \"1407000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-1.33\", \n        \"percent_change_24h\":
+        \"7.02\", \n        \"percent_change_7d\": \"-8.83\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"0.3159022348\", \n        \"24h_volume_eur\":
+        \"69074392.1719\", \n        \"market_cap_eur\": \"316691761.0\"\n    }, \n
+        \   {\n        \"id\": \"bitshares\", \n        \"name\": \"BitShares\", \n
+        \       \"symbol\": \"BTS\", \n        \"rank\": \"34\", \n        \"price_usd\":
+        \"0.138134\", \n        \"price_btc\": \"0.00002169\", \n        \"24h_volume_usd\":
+        \"7661740.0\", \n        \"market_cap_usd\": \"364321518.0\", \n        \"available_supply\":
+        \"2637450000.0\", \n        \"total_supply\": \"2637450000.0\", \n        \"max_supply\":
+        \"3600570502.0\", \n        \"percent_change_1h\": \"-0.53\", \n        \"percent_change_24h\":
+        \"8.52\", \n        \"percent_change_7d\": \"1.56\", \n        \"last_updated\":
+        \"1530368584\", \n        \"price_eur\": \"0.1180481135\", \n        \"24h_volume_eur\":
+        \"6547656.28338\", \n        \"market_cap_eur\": \"311345997.0\"\n    }, \n
+        \   {\n        \"id\": \"steem\", \n        \"name\": \"Steem\", \n        \"symbol\":
+        \"STEEM\", \n        \"rank\": \"35\", \n        \"price_usd\": \"1.36255\",
+        \n        \"price_btc\": \"0.00021375\", \n        \"24h_volume_usd\": \"3914860.0\",
+        \n        \"market_cap_usd\": \"362318933.0\", \n        \"available_supply\":
+        \"265912394.0\", \n        \"total_supply\": \"282886488.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.39\", \n        \"percent_change_24h\":
+        \"11.95\", \n        \"percent_change_7d\": \"1.09\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"1.1644233645\", \n        \"24h_volume_eur\":
+        \"3345605.26428\", \n        \"market_cap_eur\": \"309634605.0\"\n    }, \n
+        \   {\n        \"id\": \"verge\", \n        \"name\": \"Verge\", \n        \"symbol\":
+        \"XVG\", \n        \"rank\": \"36\", \n        \"price_usd\": \"0.0234185\",
+        \n        \"price_btc\": \"0.00000367\", \n        \"24h_volume_usd\": \"7622550.0\",
+        \n        \"market_cap_usd\": \"352549488.0\", \n        \"available_supply\":
+        \"15054315539.0\", \n        \"total_supply\": \"15054315539.0\", \n        \"max_supply\":
+        \"16555000000.0\", \n        \"percent_change_1h\": \"-0.25\", \n        \"percent_change_24h\":
+        \"11.42\", \n        \"percent_change_7d\": \"-3.64\", \n        \"last_updated\":
+        \"1530368524\", \n        \"price_eur\": \"0.0200132462\", \n        \"24h_volume_eur\":
+        \"6514164.85066\", \n        \"market_cap_eur\": \"301285723.0\"\n    }, \n
+        \   {\n        \"id\": \"nano\", \n        \"name\": \"Nano\", \n        \"symbol\":
+        \"NANO\", \n        \"rank\": \"37\", \n        \"price_usd\": \"2.45755\",
+        \n        \"price_btc\": \"0.00038553\", \n        \"24h_volume_usd\": \"6113170.0\",
+        \n        \"market_cap_usd\": \"327464333.0\", \n        \"available_supply\":
+        \"133248289.0\", \n        \"total_supply\": \"133248289.0\", \n        \"max_supply\":
+        \"133248290.0\", \n        \"percent_change_1h\": \"0.35\", \n        \"percent_change_24h\":
+        \"14.67\", \n        \"percent_change_7d\": \"-2.19\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"2.100200829\", \n        \"24h_volume_eur\":
+        \"5224261.84677\", \n        \"market_cap_eur\": \"279848167.0\"\n    }, \n
+        \   {\n        \"id\": \"maker\", \n        \"name\": \"Maker\", \n        \"symbol\":
+        \"MKR\", \n        \"rank\": \"38\", \n        \"price_usd\": \"527.439\",
+        \n        \"price_btc\": \"0.0827418\", \n        \"24h_volume_usd\": \"92230.6\",
+        \n        \"market_cap_usd\": \"326077437.0\", \n        \"available_supply\":
+        \"618228.0\", \n        \"total_supply\": \"1000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.21\", \n        \"percent_change_24h\":
+        \"8.21\", \n        \"percent_change_7d\": \"-0.78\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"450.744776311\", \n        \"24h_volume_eur\":
+        \"78819.4675896\", \n        \"market_cap_eur\": \"278662938.0\"\n    }, \n
+        \   {\n        \"id\": \"rchain\", \n        \"name\": \"RChain\", \n        \"symbol\":
+        \"RHOC\", \n        \"rank\": \"39\", \n        \"price_usd\": \"0.809438\",
+        \n        \"price_btc\": \"0.00012698\", \n        \"24h_volume_usd\": \"650707.0\",
+        \n        \"market_cap_usd\": \"291972710.0\", \n        \"available_supply\":
+        \"360710406.0\", \n        \"total_supply\": \"870663574.0\", \n        \"max_supply\":
+        \"1000000000.0\", \n        \"percent_change_1h\": \"1.51\", \n        \"percent_change_24h\":
+        \"3.34\", \n        \"percent_change_7d\": \"0.79\", \n        \"last_updated\":
+        \"1530368539\", \n        \"price_eur\": \"0.691738666\", \n        \"24h_volume_eur\":
+        \"556088.535658\", \n        \"market_cap_eur\": \"249517335.0\"\n    }, \n
+        \   {\n        \"id\": \"dogecoin\", \n        \"name\": \"Dogecoin\", \n
+        \       \"symbol\": \"DOGE\", \n        \"rank\": \"40\", \n        \"price_usd\":
+        \"0.00252787\", \n        \"price_btc\": \"0.00000040\", \n        \"24h_volume_usd\":
+        \"3973680.0\", \n        \"market_cap_usd\": \"290926678.0\", \n        \"available_supply\":
+        \"115087673738\", \n        \"total_supply\": \"115087673738\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.06\", \n        \"percent_change_24h\":
+        \"8.26\", \n        \"percent_change_7d\": \"-3.93\", \n        \"last_updated\":
+        \"1530368524\", \n        \"price_eur\": \"0.0021602957\", \n        \"24h_volume_eur\":
+        \"3395872.32406\", \n        \"market_cap_eur\": \"248623405.0\"\n    }, \n
+        \   {\n        \"id\": \"bitcoin-diamond\", \n        \"name\": \"Bitcoin
+        Diamond\", \n        \"symbol\": \"BCD\", \n        \"rank\": \"41\", \n        \"price_usd\":
+        \"1.88643\", \n        \"price_btc\": \"0.00029593\", \n        \"24h_volume_usd\":
+        \"1360350.0\", \n        \"market_cap_usd\": \"290051582.0\", \n        \"available_supply\":
+        \"153756875.0\", \n        \"total_supply\": \"156756875.0\", \n        \"max_supply\":
+        \"210000000.0\", \n        \"percent_change_1h\": \"0.45\", \n        \"percent_change_24h\":
+        \"6.93\", \n        \"percent_change_7d\": \"1.67\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"1.6121266504\", \n        \"24h_volume_eur\":
+        \"1162543.26368\", \n        \"market_cap_eur\": \"247875556.0\"\n    }, \n
+        \   {\n        \"id\": \"waves\", \n        \"name\": \"Waves\", \n        \"symbol\":
+        \"WAVES\", \n        \"rank\": \"42\", \n        \"price_usd\": \"2.86125\",
+        \n        \"price_btc\": \"0.00044886\", \n        \"24h_volume_usd\": \"32141000.0\",
+        \n        \"market_cap_usd\": \"286125000.0\", \n        \"available_supply\":
+        \"100000000.0\", \n        \"total_supply\": \"100000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.39\", \n        \"percent_change_24h\":
+        \"16.4\", \n        \"percent_change_7d\": \"-1.18\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"2.4451993334\", \n        \"24h_volume_eur\":
+        \"27467418.707\", \n        \"market_cap_eur\": \"244519933.0\"\n    }, \n
+        \   {\n        \"id\": \"golem-network-tokens\", \n        \"name\": \"Golem\",
+        \n        \"symbol\": \"GNT\", \n        \"rank\": \"43\", \n        \"price_usd\":
+        \"0.323061\", \n        \"price_btc\": \"0.00005068\", \n        \"24h_volume_usd\":
+        \"8349270.0\", \n        \"market_cap_usd\": \"271126360.0\", \n        \"available_supply\":
+        \"839242000.0\", \n        \"total_supply\": \"1000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.45\", \n        \"percent_change_24h\":
+        \"10.02\", \n        \"percent_change_7d\": \"4.81\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"0.2760851173\", \n        \"24h_volume_eur\":
+        \"7135213.43418\", \n        \"market_cap_eur\": \"231702226.0\"\n    }, \n
+        \   {\n        \"id\": \"digibyte\", \n        \"name\": \"DigiByte\", \n
+        \       \"symbol\": \"DGB\", \n        \"rank\": \"44\", \n        \"price_usd\":
+        \"0.0251285\", \n        \"price_btc\": \"0.00000395\", \n        \"24h_volume_usd\":
+        \"2139330.0\", \n        \"market_cap_usd\": \"262871528.0\", \n        \"available_supply\":
+        \"10461091121.0\", \n        \"total_supply\": \"10461091121.0\", \n        \"max_supply\":
+        \"21000000000.0\", \n        \"percent_change_1h\": \"-0.73\", \n        \"percent_change_24h\":
+        \"13.02\", \n        \"percent_change_7d\": \"16.95\", \n        \"last_updated\":
+        \"1530368582\", \n        \"price_eur\": \"0.0214745973\", \n        \"24h_volume_eur\":
+        \"1828252.7881\", \n        \"market_cap_eur\": \"224647719.0\"\n    }, \n
+        \   {\n        \"id\": \"populous\", \n        \"name\": \"Populous\", \n
+        \       \"symbol\": \"PPT\", \n        \"rank\": \"45\", \n        \"price_usd\":
+        \"6.96368\", \n        \"price_btc\": \"0.00109242\", \n        \"24h_volume_usd\":
+        \"8012930.0\", \n        \"market_cap_usd\": \"257684202.0\", \n        \"available_supply\":
+        \"37004027.0\", \n        \"total_supply\": \"53252246.0\", \n        \"max_supply\":
+        \"53252246.0\", \n        \"percent_change_1h\": \"0.86\", \n        \"percent_change_24h\":
+        \"19.67\", \n        \"percent_change_7d\": \"19.32\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"5.9511002863\", \n        \"24h_volume_eur\":
+        \"6847780.19912\", \n        \"market_cap_eur\": \"220214675.0\"\n    }, \n
+        \   {\n        \"id\": \"wanchain\", \n        \"name\": \"Wanchain\", \n
+        \       \"symbol\": \"WAN\", \n        \"rank\": \"46\", \n        \"price_usd\":
+        \"2.41078\", \n        \"price_btc\": \"0.00037819\", \n        \"24h_volume_usd\":
+        \"5915140.0\", \n        \"market_cap_usd\": \"255910306.0\", \n        \"available_supply\":
+        \"106152493.0\", \n        \"total_supply\": \"210000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-2.3\", \n        \"percent_change_24h\":
+        \"18.5\", \n        \"percent_change_7d\": \"-4.04\", \n        \"last_updated\":
+        \"1530368547\", \n        \"price_eur\": \"2.0602315942\", \n        \"24h_volume_eur\":
+        \"5055027.13327\", \n        \"market_cap_eur\": \"218698719.0\"\n    }, \n
+        \   {\n        \"id\": \"stratis\", \n        \"name\": \"Stratis\", \n        \"symbol\":
+        \"STRAT\", \n        \"rank\": \"47\", \n        \"price_usd\": \"2.54737\",
+        \n        \"price_btc\": \"0.00039962\", \n        \"24h_volume_usd\": \"5065780.0\",
+        \n        \"market_cap_usd\": \"251974829.0\", \n        \"available_supply\":
+        \"98915677.0\", \n        \"total_supply\": \"98915677.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.09\", \n        \"percent_change_24h\":
+        \"16.25\", \n        \"percent_change_7d\": \"3.03\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"2.1769602188\", \n        \"24h_volume_eur\":
+        \"4329171.47374\", \n        \"market_cap_eur\": \"215335494.0\"\n    }, \n
+        \   {\n        \"id\": \"mixin\", \n        \"name\": \"Mixin\", \n        \"symbol\":
+        \"XIN\", \n        \"rank\": \"48\", \n        \"price_usd\": \"553.855\",
+        \n        \"price_btc\": \"0.0868856\", \n        \"24h_volume_usd\": \"37001.1\",
+        \n        \"market_cap_usd\": \"242684599.0\", \n        \"available_supply\":
+        \"438174.0\", \n        \"total_supply\": \"1000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.07\", \n        \"percent_change_24h\":
+        \"8.57\", \n        \"percent_change_7d\": null, \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"473.319659873\", \n        \"24h_volume_eur\":
+        \"31620.8178439\", \n        \"market_cap_eur\": \"207396145.0\"\n    }, \n
+        \   {\n        \"id\": \"status\", \n        \"name\": \"Status\", \n        \"symbol\":
+        \"SNT\", \n        \"rank\": \"49\", \n        \"price_usd\": \"0.0684416\",
+        \n        \"price_btc\": \"0.00001074\", \n        \"24h_volume_usd\": \"31432100.0\",
+        \n        \"market_cap_usd\": \"237525463.0\", \n        \"available_supply\":
+        \"3470483788.0\", \n        \"total_supply\": \"6804870174.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.41\", \n        \"percent_change_24h\":
+        \"20.64\", \n        \"percent_change_7d\": \"13.12\", \n        \"last_updated\":
+        \"1530368530\", \n        \"price_eur\": \"0.0584895954\", \n        \"24h_volume_eur\":
+        \"26861598.9403\", \n        \"market_cap_eur\": \"202987192.0\"\n    }, \n
+        \   {\n        \"id\": \"basic-attention-token\", \n        \"name\": \"Basic
+        Attention Token\", \n        \"symbol\": \"BAT\", \n        \"rank\": \"50\",
+        \n        \"price_usd\": \"0.236602\", \n        \"price_btc\": \"0.00003712\",
+        \n        \"24h_volume_usd\": \"2380180.0\", \n        \"market_cap_usd\":
+        \"236602000.0\", \n        \"available_supply\": \"1000000000.0\", \n        \"total_supply\":
+        \"1500000000.0\", \n        \"max_supply\": null, \n        \"percent_change_1h\":
+        \"0.63\", \n        \"percent_change_24h\": \"17.69\", \n        \"percent_change_7d\":
+        \"-12.98\", \n        \"last_updated\": \"1530368531\", \n        \"price_eur\":
+        \"0.2021980088\", \n        \"24h_volume_eur\": \"2034081.10071\", \n        \"market_cap_eur\":
+        \"202198009.0\"\n    }, \n    {\n        \"id\": \"bitcoin-private\", \n        \"name\":
+        \"Bitcoin Private\", \n        \"symbol\": \"BTCP\", \n        \"rank\": \"51\",
+        \n        \"price_usd\": \"10.8584\", \n        \"price_btc\": \"0.00170341\",
+        \n        \"24h_volume_usd\": \"258614.0\", \n        \"market_cap_usd\":
+        \"222327272.0\", \n        \"available_supply\": \"20475141.0\", \n        \"total_supply\":
+        \"20475141.0\", \n        \"max_supply\": \"21000000.0\", \n        \"percent_change_1h\":
+        \"-0.38\", \n        \"percent_change_24h\": \"12.6\", \n        \"percent_change_7d\":
+        \"-9.33\", \n        \"last_updated\": \"1530368542\", \n        \"price_eur\":
+        \"9.279494082\", \n        \"24h_volume_eur\": \"221009.272316\", \n        \"market_cap_eur\":
+        \"189998951.0\"\n    }, \n    {\n        \"id\": \"nebulas-token\", \n        \"name\":
+        \"Nebulas\", \n        \"symbol\": \"NAS\", \n        \"rank\": \"52\", \n
+        \       \"price_usd\": \"4.79328\", \n        \"price_btc\": \"0.00075194\",
+        \n        \"24h_volume_usd\": \"34842600.0\", \n        \"market_cap_usd\":
+        \"218094240.0\", \n        \"available_supply\": \"45500000.0\", \n        \"total_supply\":
+        \"100000000.0\", \n        \"max_supply\": \"100000000.0\", \n        \"percent_change_1h\":
+        \"-4.88\", \n        \"percent_change_24h\": \"4.45\", \n        \"percent_change_7d\":
+        \"5.91\", \n        \"last_updated\": \"1530368536\", \n        \"price_eur\":
+        \"4.0962953468\", \n        \"24h_volume_eur\": \"29776182.5407\", \n        \"market_cap_eur\":
+        \"186381438.0\"\n    }, \n    {\n        \"id\": \"hshare\", \n        \"name\":
+        \"Hshare\", \n        \"symbol\": \"HSR\", \n        \"rank\": \"53\", \n
+        \       \"price_usd\": \"5.00245\", \n        \"price_btc\": \"0.00078476\",
+        \n        \"24h_volume_usd\": \"27654200.0\", \n        \"market_cap_usd\":
+        \"215971464.0\", \n        \"available_supply\": \"43173138.0\", \n        \"total_supply\":
+        \"43173138.0\", \n        \"max_supply\": \"84000000.0\", \n        \"percent_change_1h\":
+        \"1.13\", \n        \"percent_change_24h\": \"12.11\", \n        \"percent_change_7d\":
+        \"4.53\", \n        \"last_updated\": \"1530368536\", \n        \"price_eur\":
+        \"4.2750502072\", \n        \"24h_volume_eur\": \"23633038.4993\", \n        \"market_cap_eur\":
+        \"184567332.0\"\n    }, \n    {\n        \"id\": \"waltonchain\", \n        \"name\":
+        \"Waltonchain\", \n        \"symbol\": \"WTC\", \n        \"rank\": \"54\",
+        \n        \"price_usd\": \"6.56792\", \n        \"price_btc\": \"0.00103034\",
+        \n        \"24h_volume_usd\": \"5629560.0\", \n        \"market_cap_usd\":
+        \"204551953.0\", \n        \"available_supply\": \"31144099.0\", \n        \"total_supply\":
+        \"70000000.0\", \n        \"max_supply\": \"100000000.0\", \n        \"percent_change_1h\":
+        \"-0.23\", \n        \"percent_change_24h\": \"13.28\", \n        \"percent_change_7d\":
+        \"-2.71\", \n        \"last_updated\": \"1530368539\", \n        \"price_eur\":
+        \"5.6128872367\", \n        \"24h_volume_eur\": \"4810972.95219\", \n        \"market_cap_eur\":
+        \"174808318.0\"\n    }, \n    {\n        \"id\": \"iostoken\", \n        \"name\":
+        \"IOST\", \n        \"symbol\": \"IOST\", \n        \"rank\": \"55\", \n        \"price_usd\":
+        \"0.0239334\", \n        \"price_btc\": \"0.00000375\", \n        \"24h_volume_usd\":
+        \"18959400.0\", \n        \"market_cap_usd\": \"201040560.0\", \n        \"available_supply\":
+        \"8400000000.0\", \n        \"total_supply\": \"21000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.71\", \n        \"percent_change_24h\":
+        \"12.56\", \n        \"percent_change_7d\": \"1.96\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"0.0204532752\", \n        \"24h_volume_eur\":
+        \"16202538.1361\", \n        \"market_cap_eur\": \"171807512.0\"\n    }, \n
+        \   {\n        \"id\": \"loopring\", \n        \"name\": \"Loopring\", \n
+        \       \"symbol\": \"LRC\", \n        \"rank\": \"56\", \n        \"price_usd\":
+        \"0.351083\", \n        \"price_btc\": \"0.00005508\", \n        \"24h_volume_usd\":
+        \"6772800.0\", \n        \"market_cap_usd\": \"200845471.0\", \n        \"available_supply\":
+        \"572074043.0\", \n        \"total_supply\": \"1374956262.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.66\", \n        \"percent_change_24h\":
+        \"11.81\", \n        \"percent_change_7d\": \"11.55\", \n        \"last_updated\":
+        \"1530368535\", \n        \"price_eur\": \"0.3000324745\", \n        \"24h_volume_eur\":
+        \"5787975.90053\", \n        \"market_cap_eur\": \"171640791.0\"\n    }, \n
+        \   {\n        \"id\": \"digixdao\", \n        \"name\": \"DigixDAO\", \n
+        \       \"symbol\": \"DGD\", \n        \"rank\": \"57\", \n        \"price_usd\":
+        \"96.8922\", \n        \"price_btc\": \"0.0151999\", \n        \"24h_volume_usd\":
+        \"938305.0\", \n        \"market_cap_usd\": \"193784400.0\", \n        \"available_supply\":
+        \"2000000.0\", \n        \"total_supply\": \"2000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.71\", \n        \"percent_change_24h\":
+        \"8.35\", \n        \"percent_change_7d\": \"-4.79\", \n        \"last_updated\":
+        \"1530368528\", \n        \"price_eur\": \"82.8032303551\", \n        \"24h_volume_eur\":
+        \"801867.281972\", \n        \"market_cap_eur\": \"165606461.0\"\n    }, \n
+        \   {\n        \"id\": \"huobi-token\", \n        \"name\": \"Huobi Token\",
+        \n        \"symbol\": \"HT\", \n        \"rank\": \"58\", \n        \"price_usd\":
+        \"3.85981\", \n        \"price_btc\": \"0.00060551\", \n        \"24h_volume_usd\":
+        \"87395000.0\", \n        \"market_cap_usd\": \"192991272.0\", \n        \"available_supply\":
+        \"50000200.0\", \n        \"total_supply\": \"500000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.88\", \n        \"percent_change_24h\":
+        \"3.85\", \n        \"percent_change_7d\": \"-6.98\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"3.2985600137\", \n        \"24h_volume_eur\":
+        \"74687005.9394\", \n        \"market_cap_eur\": \"164928660.0\"\n    }, \n
+        \   {\n        \"id\": \"kucoin-shares\", \n        \"name\": \"KuCoin Shares\",
+        \n        \"symbol\": \"KCS\", \n        \"rank\": \"59\", \n        \"price_usd\":
+        \"2.05084\", \n        \"price_btc\": \"0.00032172\", \n        \"24h_volume_usd\":
+        \"470478.0\", \n        \"market_cap_usd\": \"186073894.0\", \n        \"available_supply\":
+        \"90730576.0\", \n        \"total_supply\": \"180730576.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"2.81\", \n        \"percent_change_24h\":
+        \"13.78\", \n        \"percent_change_7d\": \"-15.47\", \n        \"last_updated\":
+        \"1530368539\", \n        \"price_eur\": \"1.7526300047\", \n        \"24h_volume_eur\":
+        \"402066.401743\", \n        \"market_cap_eur\": \"159017130.0\"\n    }, \n
+        \   {\n        \"id\": \"aion\", \n        \"name\": \"Aion\", \n        \"symbol\":
+        \"AION\", \n        \"rank\": \"60\", \n        \"price_usd\": \"1.03323\",
+        \n        \"price_btc\": \"0.00016209\", \n        \"24h_volume_usd\": \"3533130.0\",
+        \n        \"market_cap_usd\": \"173045955.0\", \n        \"available_supply\":
+        \"167480575.0\", \n        \"total_supply\": \"465934587.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"1.69\", \n        \"percent_change_24h\":
+        \"19.96\", \n        \"percent_change_7d\": \"-8.29\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"0.8829893603\", \n        \"24h_volume_eur\":
+        \"3019382.1305\", \n        \"market_cap_eur\": \"147883566.0\"\n    }, \n
+        \   {\n        \"id\": \"komodo\", \n        \"name\": \"Komodo\", \n        \"symbol\":
+        \"KMD\", \n        \"rank\": \"61\", \n        \"price_usd\": \"1.53521\",
+        \n        \"price_btc\": \"0.00024084\", \n        \"24h_volume_usd\": \"772111.0\",
+        \n        \"market_cap_usd\": \"160051787.0\", \n        \"available_supply\":
+        \"104254003.0\", \n        \"total_supply\": \"104254003.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.55\", \n        \"percent_change_24h\":
+        \"11.41\", \n        \"percent_change_7d\": \"-8.54\", \n        \"last_updated\":
+        \"1530368531\", \n        \"price_eur\": \"1.311977097\", \n        \"24h_volume_eur\":
+        \"659839.336837\", \n        \"market_cap_eur\": \"136778864.0\"\n    }, \n
+        \   {\n        \"id\": \"gxchain\", \n        \"name\": \"GXChain\", \n        \"symbol\":
+        \"GXS\", \n        \"rank\": \"62\", \n        \"price_usd\": \"2.65712\",
+        \n        \"price_btc\": \"0.00041683\", \n        \"24h_volume_usd\": \"14661700.0\",
+        \n        \"market_cap_usd\": \"159427200.0\", \n        \"available_supply\":
+        \"60000000.0\", \n        \"total_supply\": \"100000000.0\", \n        \"max_supply\":
+        \"100000000.0\", \n        \"percent_change_1h\": \"0.12\", \n        \"percent_change_24h\":
+        \"8.58\", \n        \"percent_change_7d\": \"-5.75\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"2.270751613\", \n        \"24h_volume_eur\":
+        \"12529761.1417\", \n        \"market_cap_eur\": \"136245097.0\"\n    }, \n
+        \   {\n        \"id\": \"mithril\", \n        \"name\": \"Mithril\", \n        \"symbol\":
+        \"MITH\", \n        \"rank\": \"63\", \n        \"price_usd\": \"0.47192\",
+        \n        \"price_btc\": \"0.00007403\", \n        \"24h_volume_usd\": \"73202500.0\",
+        \n        \"market_cap_usd\": \"158827323.0\", \n        \"available_supply\":
+        \"336555608.0\", \n        \"total_supply\": \"1000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.94\", \n        \"percent_change_24h\":
+        \"21.02\", \n        \"percent_change_7d\": \"24.81\", \n        \"last_updated\":
+        \"1530368545\", \n        \"price_eur\": \"0.4032987224\", \n        \"24h_volume_eur\":
+        \"62558219.0317\", \n        \"market_cap_eur\": \"135732447.0\"\n    }, \n
+        \   {\n        \"id\": \"aelf\", \n        \"name\": \"aelf\", \n        \"symbol\":
+        \"ELF\", \n        \"rank\": \"64\", \n        \"price_usd\": \"0.608164\",
+        \n        \"price_btc\": \"0.00009541\", \n        \"24h_volume_usd\": \"25090900.0\",
+        \n        \"market_cap_usd\": \"152041000.0\", \n        \"available_supply\":
+        \"250000000.0\", \n        \"total_supply\": \"280000000.0\", \n        \"max_supply\":
+        \"1000000000.0\", \n        \"percent_change_1h\": \"-0.1\", \n        \"percent_change_24h\":
+        \"16.9\", \n        \"percent_change_7d\": \"14.77\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"0.5197316583\", \n        \"24h_volume_eur\":
+        \"21442464.6413\", \n        \"market_cap_eur\": \"129932915.0\"\n    }, \n
+        \   {\n        \"id\": \"maidsafecoin\", \n        \"name\": \"MaidSafeCoin\",
+        \n        \"symbol\": \"MAID\", \n        \"rank\": \"65\", \n        \"price_usd\":
+        \"0.332625\", \n        \"price_btc\": \"0.00005222\", \n        \"24h_volume_usd\":
+        \"2072910.0\", \n        \"market_cap_usd\": \"150530246.0\", \n        \"available_supply\":
+        \"452552412.0\", \n        \"total_supply\": \"452552412.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.53\", \n        \"percent_change_24h\":
+        \"12.78\", \n        \"percent_change_7d\": \"3.49\", \n        \"last_updated\":
+        \"1530368584\", \n        \"price_eur\": \"0.2842584284\", \n        \"24h_volume_eur\":
+        \"1771490.83451\", \n        \"market_cap_eur\": \"128641837.0\"\n    }, \n
+        \   {\n        \"id\": \"bancor\", \n        \"name\": \"Bancor\", \n        \"symbol\":
+        \"BNT\", \n        \"rank\": \"66\", \n        \"price_usd\": \"2.93451\",
+        \n        \"price_btc\": \"0.00046035\", \n        \"24h_volume_usd\": \"6335010.0\",
+        \n        \"market_cap_usd\": \"147416557.0\", \n        \"available_supply\":
+        \"50235493.0\", \n        \"total_supply\": \"75667995.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.29\", \n        \"percent_change_24h\":
+        \"10.3\", \n        \"percent_change_7d\": \"-5.26\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"2.5078066914\", \n        \"24h_volume_eur\":
+        \"5413844.37893\", \n        \"market_cap_eur\": \"125980906.0\"\n    }, \n
+        \   {\n        \"id\": \"ardor\", \n        \"name\": \"Ardor\", \n        \"symbol\":
+        \"ARDR\", \n        \"rank\": \"67\", \n        \"price_usd\": \"0.147221\",
+        \n        \"price_btc\": \"0.00002310\", \n        \"24h_volume_usd\": \"1514340.0\",
+        \n        \"market_cap_usd\": \"147073705.0\", \n        \"available_supply\":
+        \"998999495.0\", \n        \"total_supply\": \"998999495.0\", \n        \"max_supply\":
+        \"998999495.0\", \n        \"percent_change_1h\": \"-0.52\", \n        \"percent_change_24h\":
+        \"15.61\", \n        \"percent_change_7d\": \"-0.67\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"0.1258137846\", \n        \"24h_volume_eur\":
+        \"1294141.7767\", \n        \"market_cap_eur\": \"125687907.0\"\n    }, \n
+        \   {\n        \"id\": \"reddcoin\", \n        \"name\": \"ReddCoin\", \n
+        \       \"symbol\": \"RDD\", \n        \"rank\": \"68\", \n        \"price_usd\":
+        \"0.00496779\", \n        \"price_btc\": \"0.00000078\", \n        \"24h_volume_usd\":
+        \"2758860.0\", \n        \"market_cap_usd\": \"143115637.0\", \n        \"available_supply\":
+        \"28808713174.0\", \n        \"total_supply\": \"28808713174.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"1.32\", \n        \"percent_change_24h\":
+        \"16.01\", \n        \"percent_change_7d\": \"-9.49\", \n        \"last_updated\":
+        \"1530368584\", \n        \"price_eur\": \"0.0042454301\", \n        \"24h_volume_eur\":
+        \"2357697.73106\", \n        \"market_cap_eur\": \"122305377.0\"\n    }, \n
+        \   {\n        \"id\": \"ark\", \n        \"name\": \"Ark\", \n        \"symbol\":
+        \"ARK\", \n        \"rank\": \"69\", \n        \"price_usd\": \"1.3184\",
+        \n        \"price_btc\": \"0.00020682\", \n        \"24h_volume_usd\": \"870811.0\",
+        \n        \"market_cap_usd\": \"136504449.0\", \n        \"available_supply\":
+        \"103537962.0\", \n        \"total_supply\": \"134787962.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.38\", \n        \"percent_change_24h\":
+        \"11.8\", \n        \"percent_change_7d\": \"-5.05\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"1.126693159\", \n        \"24h_volume_eur\":
+        \"744187.497329\", \n        \"market_cap_eur\": \"116655513.0\"\n    }, \n
+        \   {\n        \"id\": \"kyber-network\", \n        \"name\": \"Kyber Network\",
+        \n        \"symbol\": \"KNC\", \n        \"rank\": \"70\", \n        \"price_usd\":
+        \"1.0085\", \n        \"price_btc\": \"0.00015821\", \n        \"24h_volume_usd\":
+        \"11683300.0\", \n        \"market_cap_usd\": \"135272825.0\", \n        \"available_supply\":
+        \"134132697.0\", \n        \"total_supply\": \"215625349.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"3.67\", \n        \"percent_change_24h\":
+        \"33.28\", \n        \"percent_change_7d\": \"22.87\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"0.8618553177\", \n        \"24h_volume_eur\":
+        \"9984446.43849\", \n        \"market_cap_eur\": \"115602978.0\"\n    }, \n
+        \   {\n        \"id\": \"cryptonex\", \n        \"name\": \"Cryptonex\", \n
+        \       \"symbol\": \"CNX\", \n        \"rank\": \"71\", \n        \"price_usd\":
+        \"2.94808\", \n        \"price_btc\": \"0.00046248\", \n        \"24h_volume_usd\":
+        \"1505920.0\", \n        \"market_cap_usd\": \"133680220.0\", \n        \"available_supply\":
+        \"45344841.0\", \n        \"total_supply\": \"106782467.0\", \n        \"max_supply\":
+        \"210000000.0\", \n        \"percent_change_1h\": \"-1.1\", \n        \"percent_change_24h\":
+        \"-1.2\", \n        \"percent_change_7d\": \"-17.82\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"2.5194034953\", \n        \"24h_volume_eur\":
+        \"1286946.11802\", \n        \"market_cap_eur\": \"114241952.0\"\n    }, \n
+        \   {\n        \"id\": \"moac\", \n        \"name\": \"MOAC\", \n        \"symbol\":
+        \"MOAC\", \n        \"rank\": \"72\", \n        \"price_usd\": \"3.58204\",
+        \n        \"price_btc\": \"0.00056193\", \n        \"24h_volume_usd\": \"107545.0\",
+        \n        \"market_cap_usd\": \"128584685.0\", \n        \"available_supply\":
+        \"35897055.0\", \n        \"total_supply\": \"56483386.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.62\", \n        \"percent_change_24h\":
+        \"2.73\", \n        \"percent_change_7d\": \"-8.54\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"3.0611801906\", \n        \"24h_volume_eur\":
+        \"91907.0204675\", \n        \"market_cap_eur\": \"109887352.0\"\n    }, \n
+        \   {\n        \"id\": \"monacoin\", \n        \"name\": \"MonaCoin\", \n
+        \       \"symbol\": \"MONA\", \n        \"rank\": \"73\", \n        \"price_usd\":
+        \"2.11283\", \n        \"price_btc\": \"0.00033172\", \n        \"24h_volume_usd\":
+        \"1001350.0\", \n        \"market_cap_usd\": \"127882099.0\", \n        \"available_supply\":
+        \"60526450.0\", \n        \"total_supply\": \"60526450.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-2.22\", \n        \"percent_change_24h\":
+        \"8.02\", \n        \"percent_change_7d\": \"-8.23\", \n        \"last_updated\":
+        \"1530368585\", \n        \"price_eur\": \"1.8056061189\", \n        \"24h_volume_eur\":
+        \"855744.989959\", \n        \"market_cap_eur\": \"109286928.0\"\n    }, \n
+        \   {\n        \"id\": \"centrality\", \n        \"name\": \"Centrality\",
+        \n        \"symbol\": \"CENNZ\", \n        \"rank\": \"74\", \n        \"price_usd\":
+        \"0.159859\", \n        \"price_btc\": \"0.00002508\", \n        \"24h_volume_usd\":
+        \"559750.0\", \n        \"market_cap_usd\": \"126256703.0\", \n        \"available_supply\":
+        \"789800407.0\", \n        \"total_supply\": \"1200000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.08\", \n        \"percent_change_24h\":
+        \"10.98\", \n        \"percent_change_7d\": \"-2.65\", \n        \"last_updated\":
+        \"1530368546\", \n        \"price_eur\": \"0.1366141093\", \n        \"24h_volume_eur\":
+        \"478357.475537\", \n        \"market_cap_eur\": \"107897879.0\"\n    }, \n
+        \   {\n        \"id\": \"funfair\", \n        \"name\": \"FunFair\", \n        \"symbol\":
+        \"FUN\", \n        \"rank\": \"75\", \n        \"price_usd\": \"0.0245586\",
+        \n        \"price_btc\": \"0.00000385\", \n        \"24h_volume_usd\": \"2357200.0\",
+        \n        \"market_cap_usd\": \"123059416.0\", \n        \"available_supply\":
+        \"5010848189.0\", \n        \"total_supply\": \"10999873621.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.9\", \n        \"percent_change_24h\":
+        \"14.24\", \n        \"percent_change_7d\": \"2.36\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"0.0209875657\", \n        \"24h_volume_eur\":
+        \"2014442.59283\", \n        \"market_cap_eur\": \"105165506.0\"\n    }, \n
+        \   {\n        \"id\": \"dentacoin\", \n        \"name\": \"Dentacoin\", \n
+        \       \"symbol\": \"DCN\", \n        \"rank\": \"76\", \n        \"price_usd\":
+        \"0.000372971\", \n        \"price_btc\": \"0.00000006\", \n        \"24h_volume_usd\":
+        \"59955.2\", \n        \"market_cap_usd\": \"121300095.0\", \n        \"available_supply\":
+        \"325226613094\", \n        \"total_supply\": \"1963173416169\", \n        \"max_supply\":
+        \"8000000000000\", \n        \"percent_change_1h\": \"0.17\", \n        \"percent_change_24h\":
+        \"14.5\", \n        \"percent_change_7d\": \"-1.96\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"0.0003187378\", \n        \"24h_volume_eur\":
+        \"51237.191813\", \n        \"market_cap_eur\": \"103662005.0\"\n    }, \n
+        \   {\n        \"id\": \"ethos\", \n        \"name\": \"Ethos\", \n        \"symbol\":
+        \"ETHOS\", \n        \"rank\": \"77\", \n        \"price_usd\": \"1.52598\",
+        \n        \"price_btc\": \"0.00023939\", \n        \"24h_volume_usd\": \"7419400.0\",
+        \n        \"market_cap_usd\": \"117276279.0\", \n        \"available_supply\":
+        \"76853090.0\", \n        \"total_supply\": \"222295208.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"2.76\", \n        \"percent_change_24h\":
+        \"7.88\", \n        \"percent_change_7d\": \"19.7\", \n        \"last_updated\":
+        \"1530368550\", \n        \"price_eur\": \"1.3040892193\", \n        \"24h_volume_eur\":
+        \"6340554.62975\", \n        \"market_cap_eur\": \"100223286.0\"\n    }, \n
+        \   {\n        \"id\": \"power-ledger\", \n        \"name\": \"Power Ledger\",
+        \n        \"symbol\": \"POWR\", \n        \"rank\": \"78\", \n        \"price_usd\":
+        \"0.308658\", \n        \"price_btc\": \"0.00004842\", \n        \"24h_volume_usd\":
+        \"66546900.0\", \n        \"market_cap_usd\": \"115254948.0\", \n        \"available_supply\":
+        \"373406643.0\", \n        \"total_supply\": \"1000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.19\", \n        \"percent_change_24h\":
+        \"62.85\", \n        \"percent_change_7d\": \"47.91\", \n        \"last_updated\":
+        \"1530368539\", \n        \"price_eur\": \"0.2637764389\", \n        \"24h_volume_eur\":
+        \"56870401.2306\", \n        \"market_cap_eur\": \"98495875.0\"\n    }, \n
+        \   {\n        \"id\": \"cortex\", \n        \"name\": \"Cortex\", \n        \"symbol\":
+        \"CTXC\", \n        \"rank\": \"79\", \n        \"price_usd\": \"0.767024\",
+        \n        \"price_btc\": \"0.00012033\", \n        \"24h_volume_usd\": \"17527900.0\",
+        \n        \"market_cap_usd\": \"114894410.0\", \n        \"available_supply\":
+        \"149792458.0\", \n        \"total_supply\": \"299792458.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-1.87\", \n        \"percent_change_24h\":
+        \"16.92\", \n        \"percent_change_7d\": \"35.02\", \n        \"last_updated\":
+        \"1530368544\", \n        \"price_eur\": \"0.6554920309\", \n        \"24h_volume_eur\":
+        \"14979190.702\", \n        \"market_cap_eur\": \"98187763.0\"\n    }, \n
+        \   {\n        \"id\": \"emercoin\", \n        \"name\": \"Emercoin\", \n
+        \       \"symbol\": \"EMC\", \n        \"rank\": \"80\", \n        \"price_usd\":
+        \"2.69696\", \n        \"price_btc\": \"0.00042343\", \n        \"24h_volume_usd\":
+        \"1985350.0\", \n        \"market_cap_usd\": \"113120003.0\", \n        \"available_supply\":
+        \"41943523.0\", \n        \"total_supply\": \"41943523.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.02\", \n        \"percent_change_24h\":
+        \"13.86\", \n        \"percent_change_7d\": \"6.46\", \n        \"last_updated\":
+        \"1530368583\", \n        \"price_eur\": \"2.3047985301\", \n        \"24h_volume_eur\":
+        \"1696662.82101\", \n        \"market_cap_eur\": \"96671369.0\"\n    }, \n
+        \   {\n        \"id\": \"pivx\", \n        \"name\": \"PIVX\", \n        \"symbol\":
+        \"PIVX\", \n        \"rank\": \"81\", \n        \"price_usd\": \"1.97921\",
+        \n        \"price_btc\": \"0.00031049\", \n        \"24h_volume_usd\": \"1184260.0\",
+        \n        \"market_cap_usd\": \"112044909.0\", \n        \"available_supply\":
+        \"56610925.0\", \n        \"total_supply\": \"56610925.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.58\", \n        \"percent_change_24h\":
+        \"11.43\", \n        \"percent_change_7d\": \"-0.48\", \n        \"last_updated\":
+        \"1530368526\", \n        \"price_eur\": \"1.6914156305\", \n        \"24h_volume_eur\":
+        \"1012058.28313\", \n        \"market_cap_eur\": \"95752604.0\"\n    }, \n
+        \   {\n        \"id\": \"enigma-project\", \n        \"name\": \"Enigma\",
+        \n        \"symbol\": \"ENG\", \n        \"rank\": \"82\", \n        \"price_usd\":
+        \"1.4932\", \n        \"price_btc\": \"0.00023425\", \n        \"24h_volume_usd\":
+        \"2417510.0\", \n        \"market_cap_usd\": \"111745371.0\", \n        \"available_supply\":
+        \"74836171.0\", \n        \"total_supply\": \"150000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"3.09\", \n        \"percent_change_24h\":
+        \"12.42\", \n        \"percent_change_7d\": \"2.82\", \n        \"last_updated\":
+        \"1530368539\", \n        \"price_eur\": \"1.2760757168\", \n        \"24h_volume_eur\":
+        \"2065982.99363\", \n        \"market_cap_eur\": \"95496621.0\"\n    }, \n
+        \   {\n        \"id\": \"dropil\", \n        \"name\": \"Dropil\", \n        \"symbol\":
+        \"DROP\", \n        \"rank\": \"83\", \n        \"price_usd\": \"0.00561835\",
+        \n        \"price_btc\": \"0.00000088\", \n        \"24h_volume_usd\": \"437022.0\",
+        \n        \"market_cap_usd\": \"111130758.0\", \n        \"available_supply\":
+        \"19779963427.0\", \n        \"total_supply\": \"30000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.79\", \n        \"percent_change_24h\":
+        \"5.69\", \n        \"percent_change_7d\": \"2.51\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"0.004801393\", \n        \"24h_volume_eur\":
+        \"373475.195488\", \n        \"market_cap_eur\": \"94971378.0\"\n    }, \n
+        \   {\n        \"id\": \"theta-token\", \n        \"name\": \"Theta Token\",
+        \n        \"symbol\": \"THETA\", \n        \"rank\": \"84\", \n        \"price_usd\":
+        \"0.161973\", \n        \"price_btc\": \"0.00002541\", \n        \"24h_volume_usd\":
+        \"21356300.0\", \n        \"market_cap_usd\": \"107534310.0\", \n        \"available_supply\":
+        \"663902689.0\", \n        \"total_supply\": \"1000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-1.91\", \n        \"percent_change_24h\":
+        \"19.23\", \n        \"percent_change_7d\": \"30.86\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"0.1384207153\", \n        \"24h_volume_eur\":
+        \"18250908.0032\", \n        \"market_cap_eur\": \"91897885.0\"\n    }, \n
+        \   {\n        \"id\": \"monaco\", \n        \"name\": \"Monaco\", \n        \"symbol\":
+        \"MCO\", \n        \"rank\": \"85\", \n        \"price_usd\": \"6.80332\",
+        \n        \"price_btc\": \"0.00106727\", \n        \"24h_volume_usd\": \"33874200.0\",
+        \n        \"market_cap_usd\": \"107450487.0\", \n        \"available_supply\":
+        \"15793831.0\", \n        \"total_supply\": \"31587682.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-1.25\", \n        \"percent_change_24h\":
+        \"14.24\", \n        \"percent_change_7d\": \"42.26\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"5.8140580267\", \n        \"24h_volume_eur\":
+        \"28948596.3338\", \n        \"market_cap_eur\": \"91826250.0\"\n    }, \n
+        \   {\n        \"id\": \"cybermiles\", \n        \"name\": \"CyberMiles\",
+        \n        \"symbol\": \"CMT\", \n        \"rank\": \"86\", \n        \"price_usd\":
+        \"0.153805\", \n        \"price_btc\": \"0.00002413\", \n        \"24h_volume_usd\":
+        \"17235500.0\", \n        \"market_cap_usd\": \"106503922.0\", \n        \"available_supply\":
+        \"692460729.0\", \n        \"total_supply\": \"1000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.16\", \n        \"percent_change_24h\":
+        \"15.14\", \n        \"percent_change_7d\": \"1.76\", \n        \"last_updated\":
+        \"1530368538\", \n        \"price_eur\": \"0.1314404136\", \n        \"24h_volume_eur\":
+        \"14729308.2083\", \n        \"market_cap_eur\": \"91017325.0\"\n    }, \n
+        \   {\n        \"id\": \"elastos\", \n        \"name\": \"Elastos\", \n        \"symbol\":
+        \"ELA\", \n        \"rank\": \"87\", \n        \"price_usd\": \"20.2907\",
+        \n        \"price_btc\": \"0.00318309\", \n        \"24h_volume_usd\": \"1801480.0\",
+        \n        \"market_cap_usd\": \"106362905.0\", \n        \"available_supply\":
+        \"5241953.0\", \n        \"total_supply\": \"33683492.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.54\", \n        \"percent_change_24h\":
+        \"9.11\", \n        \"percent_change_7d\": \"-3.56\", \n        \"last_updated\":
+        \"1530368545\", \n        \"price_eur\": \"17.3402555228\", \n        \"24h_volume_eur\":
+        \"1539529.1202\", \n        \"market_cap_eur\": \"90896812.0\"\n    }, \n
+        \   {\n        \"id\": \"kin\", \n        \"name\": \"Kin\", \n        \"symbol\":
+        \"KIN\", \n        \"rank\": \"88\", \n        \"price_usd\": \"0.000140015\",
+        \n        \"price_btc\": \"0.00000002\", \n        \"24h_volume_usd\": \"478549.0\",
+        \n        \"market_cap_usd\": \"105865000.0\", \n        \"available_supply\":
+        \"756097560976\", \n        \"total_supply\": \"10000000000000\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.09\", \n        \"percent_change_24h\":
+        \"7.91\", \n        \"percent_change_7d\": \"4.36\", \n        \"last_updated\":
+        \"1530368535\", \n        \"price_eur\": \"0.0001196556\", \n        \"24h_volume_eur\":
+        \"408963.808059\", \n        \"market_cap_eur\": \"90471307.0\"\n    }, \n
+        \   {\n        \"id\": \"gas\", \n        \"name\": \"Gas\", \n        \"symbol\":
+        \"GAS\", \n        \"rank\": \"89\", \n        \"price_usd\": \"10.1224\",
+        \n        \"price_btc\": \"0.00158794\", \n        \"24h_volume_usd\": \"3820080.0\",
+        \n        \"market_cap_usd\": \"102523464.0\", \n        \"available_supply\":
+        \"10128375.0\", \n        \"total_supply\": \"17190378.0\", \n        \"max_supply\":
+        \"100000000.0\", \n        \"percent_change_1h\": \"-0.39\", \n        \"percent_change_24h\":
+        \"11.95\", \n        \"percent_change_7d\": \"-11.35\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"8.6505148913\", \n        \"24h_volume_eur\":
+        \"3264607.10165\", \n        \"market_cap_eur\": \"87615660.0\"\n    }, \n
+        \   {\n        \"id\": \"loom-network\", \n        \"name\": \"Loom Network\",
+        \n        \"symbol\": \"LOOM\", \n        \"rank\": \"90\", \n        \"price_usd\":
+        \"0.169325\", \n        \"price_btc\": \"0.00002656\", \n        \"24h_volume_usd\":
+        \"2762560.0\", \n        \"market_cap_usd\": \"102454546.0\", \n        \"available_supply\":
+        \"605076310.0\", \n        \"total_supply\": \"1000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.31\", \n        \"percent_change_24h\":
+        \"18.28\", \n        \"percent_change_7d\": \"18.0\", \n        \"last_updated\":
+        \"1530368545\", \n        \"price_eur\": \"0.1447036705\", \n        \"24h_volume_eur\":
+        \"2360859.71884\", \n        \"market_cap_eur\": \"87556763.0\"\n    }, \n
+        \   {\n        \"id\": \"bibox-token\", \n        \"name\": \"Bibox Token\",
+        \n        \"symbol\": \"BIX\", \n        \"rank\": \"91\", \n        \"price_usd\":
+        \"0.965988\", \n        \"price_btc\": \"0.00015154\", \n        \"24h_volume_usd\":
+        \"78082400.0\", \n        \"market_cap_usd\": \"100793570.0\", \n        \"available_supply\":
+        \"104342466.0\", \n        \"total_supply\": \"269944749.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-0.07\", \n        \"percent_change_24h\":
+        \"12.38\", \n        \"percent_change_7d\": \"-13.94\", \n        \"last_updated\":
+        \"1530368539\", \n        \"price_eur\": \"0.8255249327\", \n        \"24h_volume_eur\":
+        \"66728539.0762\", \n        \"market_cap_eur\": \"86137307.0\"\n    }, \n
+        \   {\n        \"id\": \"veritaseum\", \n        \"name\": \"Veritaseum\",
+        \n        \"symbol\": \"VERI\", \n        \"rank\": \"92\", \n        \"price_usd\":
+        \"49.4153\", \n        \"price_btc\": \"0.007752\", \n        \"24h_volume_usd\":
+        \"355591.0\", \n        \"market_cap_usd\": \"100641445.0\", \n        \"available_supply\":
+        \"2036645.0\", \n        \"total_supply\": \"100000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.15\", \n        \"percent_change_24h\":
+        \"14.67\", \n        \"percent_change_7d\": \"-8.0\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"42.2298850575\", \n        \"24h_volume_eur\":
+        \"303884.972012\", \n        \"market_cap_eur\": \"86007303.0\"\n    }, \n
+        \   {\n        \"id\": \"waykichain\", \n        \"name\": \"WaykiChain\",
+        \n        \"symbol\": \"WICC\", \n        \"rank\": \"93\", \n        \"price_usd\":
+        \"0.582456\", \n        \"price_btc\": \"0.00009137\", \n        \"24h_volume_usd\":
+        \"6781520.0\", \n        \"market_cap_usd\": \"98085590.0\", \n        \"available_supply\":
+        \"168400000.0\", \n        \"total_supply\": \"210000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-1.22\", \n        \"percent_change_24h\":
+        \"6.82\", \n        \"percent_change_7d\": \"46.19\", \n        \"last_updated\":
+        \"1530368544\", \n        \"price_eur\": \"0.4977618254\", \n        \"24h_volume_eur\":
+        \"5795427.93659\", \n        \"market_cap_eur\": \"83823091.0\"\n    }, \n
+        \   {\n        \"id\": \"nxt\", \n        \"name\": \"Nxt\", \n        \"symbol\":
+        \"NXT\", \n        \"rank\": \"94\", \n        \"price_usd\": \"0.096524\",
+        \n        \"price_btc\": \"0.00001514\", \n        \"24h_volume_usd\": \"3277670.0\",
+        \n        \"market_cap_usd\": \"96427470.0\", \n        \"available_supply\":
+        \"998999942.0\", \n        \"total_supply\": \"998999942.0\", \n        \"max_supply\":
+        \"1000000000.0\", \n        \"percent_change_1h\": \"0.75\", \n        \"percent_change_24h\":
+        \"12.5\", \n        \"percent_change_7d\": \"-2.52\", \n        \"last_updated\":
+        \"1530368524\", \n        \"price_eur\": \"0.0824885698\", \n        \"24h_volume_eur\":
+        \"2801068.23911\", \n        \"market_cap_eur\": \"82406076.0\"\n    }, \n
+        \   {\n        \"id\": \"fusion\", \n        \"name\": \"Fusion\", \n        \"symbol\":
+        \"FSN\", \n        \"rank\": \"95\", \n        \"price_usd\": \"3.20642\",
+        \n        \"price_btc\": \"0.00050301\", \n        \"24h_volume_usd\": \"5180360.0\",
+        \n        \"market_cap_usd\": \"95180433.0\", \n        \"available_supply\":
+        \"29684331.0\", \n        \"total_supply\": \"57344000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"0.41\", \n        \"percent_change_24h\":
+        \"6.12\", \n        \"percent_change_7d\": \"-7.04\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"2.7401786096\", \n        \"24h_volume_eur\":
+        \"4427090.54395\", \n        \"market_cap_eur\": \"81340369.0\"\n    }, \n
+        \   {\n        \"id\": \"syscoin\", \n        \"name\": \"Syscoin\", \n        \"symbol\":
+        \"SYS\", \n        \"rank\": \"96\", \n        \"price_usd\": \"0.176177\",
+        \n        \"price_btc\": \"0.00002766\", \n        \"24h_volume_usd\": \"931906.0\",
+        \n        \"market_cap_usd\": \"94439467.0\", \n        \"available_supply\":
+        \"536048787.0\", \n        \"total_supply\": \"536048787.0\", \n        \"max_supply\":
+        \"888000000.0\", \n        \"percent_change_1h\": \"0.04\", \n        \"percent_change_24h\":
+        \"15.56\", \n        \"percent_change_7d\": \"-9.33\", \n        \"last_updated\":
+        \"1530368585\", \n        \"price_eur\": \"0.15055933\", \n        \"24h_volume_eur\":
+        \"796398.752297\", \n        \"market_cap_eur\": \"80707146.0\"\n    }, \n
+        \   {\n        \"id\": \"wax\", \n        \"name\": \"WAX\", \n        \"symbol\":
+        \"WAX\", \n        \"rank\": \"97\", \n        \"price_usd\": \"0.112262\",
+        \n        \"price_btc\": \"0.00001761\", \n        \"24h_volume_usd\": \"4196300.0\",
+        \n        \"market_cap_usd\": \"94305919.0\", \n        \"available_supply\":
+        \"840052011.0\", \n        \"total_supply\": \"1850000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"2.69\", \n        \"percent_change_24h\":
+        \"31.97\", \n        \"percent_change_7d\": \"-1.92\", \n        \"last_updated\":
+        \"1530368539\", \n        \"price_eur\": \"0.0959381276\", \n        \"24h_volume_eur\":
+        \"3586121.43742\", \n        \"market_cap_eur\": \"80593017.0\"\n    }, \n
+        \   {\n        \"id\": \"tenx\", \n        \"name\": \"TenX\", \n        \"symbol\":
+        \"PAY\", \n        \"rank\": \"98\", \n        \"price_usd\": \"0.849245\",
+        \n        \"price_btc\": \"0.00013322\", \n        \"24h_volume_usd\": \"19635600.0\",
+        \n        \"market_cap_usd\": \"92737860.0\", \n        \"available_supply\":
+        \"109200361.0\", \n        \"total_supply\": \"205218256.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-3.15\", \n        \"percent_change_24h\":
+        \"50.77\", \n        \"percent_change_7d\": \"61.71\", \n        \"last_updated\":
+        \"1530368532\", \n        \"price_eur\": \"0.7257573815\", \n        \"24h_volume_eur\":
+        \"16780412.7676\", \n        \"market_cap_eur\": \"79252968.0\"\n    }, \n
+        \   {\n        \"id\": \"scryinfo\", \n        \"name\": \"Scry.info\", \n
+        \       \"symbol\": \"DDD\", \n        \"rank\": \"99\", \n        \"price_usd\":
+        \"0.269512\", \n        \"price_btc\": \"0.00004228\", \n        \"24h_volume_usd\":
+        \"680837.0\", \n        \"market_cap_usd\": \"91649432.0\", \n        \"available_supply\":
+        \"340056963.0\", \n        \"total_supply\": \"1000000000.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"-2.26\", \n        \"percent_change_24h\":
+        \"8.32\", \n        \"percent_change_7d\": \"-17.06\", \n        \"last_updated\":
+        \"1530368542\", \n        \"price_eur\": \"0.2303226082\", \n        \"24h_volume_eur\":
+        \"581837.371277\", \n        \"market_cap_eur\": \"78322807.0\"\n    }, \n
+        \   {\n        \"id\": \"decentraland\", \n        \"name\": \"Decentraland\",
+        \n        \"symbol\": \"MANA\", \n        \"rank\": \"100\", \n        \"price_usd\":
+        \"0.0871399\", \n        \"price_btc\": \"0.00001367\", \n        \"24h_volume_usd\":
+        \"4578630.0\", \n        \"market_cap_usd\": \"91509226.0\", \n        \"available_supply\":
+        \"1050141509.0\", \n        \"total_supply\": \"2644403343.0\", \n        \"max_supply\":
+        null, \n        \"percent_change_1h\": \"1.04\", \n        \"percent_change_24h\":
+        \"10.94\", \n        \"percent_change_7d\": \"-7.82\", \n        \"last_updated\":
+        \"1530368536\", \n        \"price_eur\": \"0.0744689997\", \n        \"24h_volume_eur\":
+        \"3912857.32598\", \n        \"market_cap_eur\": \"78202988.0\"\n    }\n]"
+    http_version: 
+  recorded_at: Sat, 30 Jun 2018 14:23:12 GMT
 recorded_with: VCR 4.0.0

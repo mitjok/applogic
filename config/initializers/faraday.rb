@@ -21,6 +21,7 @@ module Faraday
         Rails.logger.debug { describe } unless r.success?
       end
     end
+    alias log_failure assert_success!
 
     def describe
       ["-- HTTP #{status} #{reason_phrase} --",

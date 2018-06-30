@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 28 Jun 2018 16:16:08 GMT
+      - Sat, 30 Jun 2018 14:17:51 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -27,8 +27,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d91b1004666800a0718bd569359e2e6c11530202568; expires=Fri, 28-Jun-19
-        16:16:08 GMT; path=/; domain=.coinmarketcap.com; HttpOnly; Secure
+      - __cfduid=da6a2b2914a0d55c65100fabe0a7fa7721530368271; expires=Sun, 30-Jun-19
+        14:17:51 GMT; path=/; domain=.coinmarketcap.com; HttpOnly; Secure
       Access-Control-Allow-Origin:
       - "*"
       Cf-Cache-Status:
@@ -40,7 +40,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 432174c81d0d8255-KBP
+      - 4331423e79f88ac8-KBP
     body:
       encoding: ASCII-8BIT
       string: "{\n    \"data\": [\n        {\n            \"id\": 1, \n            \"name\":
@@ -96,7 +96,7 @@ http_interactions:
         \"emerald\"\n        }, \n        {\n            \"id\": 51, \n            \"name\":
         \"GlobalCoin\", \n            \"symbol\": \"GLC\", \n            \"website_slug\":
         \"globalcoin\"\n        }, \n        {\n            \"id\": 52, \n            \"name\":
-        \"Ripple\", \n            \"symbol\": \"XRP\", \n            \"website_slug\":
+        \"XRP\", \n            \"symbol\": \"XRP\", \n            \"website_slug\":
         \"ripple\"\n        }, \n        {\n            \"id\": 53, \n            \"name\":
         \"Quark\", \n            \"symbol\": \"QRK\", \n            \"website_slug\":
         \"quark\"\n        }, \n        {\n            \"id\": 56, \n            \"name\":
@@ -3300,9 +3300,65 @@ http_interactions:
         \"Origin Sport\", \n            \"symbol\": \"ORS\", \n            \"website_slug\":
         \"origin-sport\"\n        }, \n        {\n            \"id\": 2880, \n            \"name\":
         \"Rate3\", \n            \"symbol\": \"RTE\", \n            \"website_slug\":
-        \"rate3\"\n        }\n    ], \n    \"metadata\": {\n        \"timestamp\":
-        1530202194, \n        \"num_cryptocurrencies\": 1596, \n        \"error\":
+        \"rate3\"\n        }, \n        {\n            \"id\": 2881, \n            \"name\":
+        \"Distributed Credit Chain\", \n            \"symbol\": \"DCC\", \n            \"website_slug\":
+        \"distributed-credit-chain\"\n        }\n    ], \n    \"metadata\": {\n        \"timestamp\":
+        1530367809, \n        \"num_cryptocurrencies\": 1597, \n        \"error\":
         null\n    }\n}"
     http_version: 
-  recorded_at: Thu, 28 Jun 2018 16:16:08 GMT
+  recorded_at: Sat, 30 Jun 2018 14:17:51 GMT
+- request:
+    method: get
+    uri: https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=EUR
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 30 Jun 2018 14:17:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db1f8aa0ec306dc2aeeb068f0c9c7428d1530368271; expires=Sun, 30-Jun-19
+        14:17:51 GMT; path=/; domain=.coinmarketcap.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - HIT
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 43314240cab98b52-KBP
+    body:
+      encoding: ASCII-8BIT
+      string: "[\n    {\n        \"id\": \"bitcoin\", \n        \"name\": \"Bitcoin\",
+        \n        \"symbol\": \"BTC\", \n        \"rank\": \"1\", \n        \"price_usd\":
+        \"6424.52\", \n        \"price_btc\": \"1.0\", \n        \"24h_volume_usd\":
+        \"4806260000.0\", \n        \"market_cap_usd\": \"110012034963\", \n        \"available_supply\":
+        \"17123775.0\", \n        \"total_supply\": \"17123775.0\", \n        \"max_supply\":
+        \"21000000.0\", \n        \"percent_change_1h\": \"-0.08\", \n        \"percent_change_24h\":
+        \"8.91\", \n        \"percent_change_7d\": \"4.74\", \n        \"last_updated\":
+        \"1530368182\", \n        \"price_eur\": \"5490.33884545\", \n        \"24h_volume_eur\":
+        \"4107387941.72\", \n        \"market_cap_eur\": \"94015327063.0\"\n    }\n]"
+    http_version: 
+  recorded_at: Sat, 30 Jun 2018 14:17:51 GMT
 recorded_with: VCR 4.0.0
