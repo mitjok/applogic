@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://peatio.io:5000/management_api/v1/withdraws
+    body:
+      encoding: UTF-8
+      string: '{"payload":"eyJkYXRhIjp7InVpZCI6IklEOUIwMEMzMjU1NiIsImxpbWl0IjoxMDAwfSwiaWF0IjoxNTMwNTMxNzYxLCJleHAiOjE1MzA1MzE4MjEsImp0aSI6ImI2YzI3MmE2ZjUwYmM4YzBiY2UzMzk2MyIsImlzcyI6ImFwcGxvZ2ljIn0","signatures":[{"protected":"eyJhbGciOiJSUzI1NiJ9","header":{"kid":"applogic"},"signature":"gDu98rlMUQWJC78AwWNKhQijxl1mitAOcaJdgJTu4VVpPcWVUxU3GTj85R9evxDmDhO39f-LlnMMmU6yw6k-XKChhqKE6ZSHnMO75W_bGacK636cYbKHog-ahSNlXL2nC5_i0Gq7RPscykvagIEz5f4cNWccx3FXWzWyhThUMCJN7E7degsVilWw9D7qFB9-b7TSv3UfLfi6wvGK_VpHH7u4uUfztmgnK8BNQyrsF4UO2HnQ694QG8r69j4Vy2_GgDxEmVXXXl57qwipknJ_3RYJ1_cOJ2yA5RdXXFkTahNl9hqrpseaUsVxXUyi3i84lgm-8XE3JR3baM44ysilgQ"}]}'
+    headers:
+      User-Agent:
+      - Faraday v0.15.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"bf6704baea88ed5d731e81cea8603946"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 83e23a3e-9b81-42f9-a2e5-feab80c097d9
+      X-Runtime:
+      - '0.273562'
+      Content-Length:
+      - '3768'
+    body:
+      encoding: UTF-8
+      string: '[{"tid":"TID24AFD3B4FC","uid":"ID9B00C32556","currency":"eth","type":"coin","amount":"0.001","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"succeed","created_at":"2018-06-20T17:56:37+02:00","blockchain_txid":"0x385b5025cac2f36f839909648998e305a601dfdcbcfeb93ecb6fff6cb9e48457"},{"tid":"TID55AFA3A8C0","uid":"ID9B00C32556","currency":"eth","type":"coin","amount":"0.001","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"succeed","created_at":"2018-05-22T16:13:00+02:00","blockchain_txid":"0x692124b7f9e82b8aa7574ba3469e38b928c06ea393a195e53c3c38d1db2b4b7f"},{"tid":"TID74BEB5B130","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.001","fee":"0.0","rid":"0x9d053cf181c6bd59788f100fae9b90d5018b2544","state":"succeed","created_at":"2018-05-22T16:05:33+02:00","blockchain_txid":"0x3f4701aa6e1877992d3b1164e657fbf99931d2b33183bfe462778cf9e64aaa39"},{"tid":"TIDC4756FEC82","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.0001","fee":"0.0","rid":"0x9d053cf181c6bd59788f100fae9b90d5018b2544","state":"failed","created_at":"2018-05-22T15:57:12+02:00","blockchain_txid":null},{"tid":"TIDA3ECA26F7C","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.002","fee":"0.0","rid":"0x9d053cf181c6bd59788f100fae9b90d5018b2544","state":"failed","created_at":"2018-05-22T15:55:07+02:00","blockchain_txid":null},{"tid":"TIDD6CE89E3C7","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.1","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"failed","created_at":"2018-05-22T15:45:37+02:00","blockchain_txid":null},{"tid":"TID21B89D538A","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.0001","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"failed","created_at":"2018-05-22T15:43:41+02:00","blockchain_txid":null},{"tid":"TID82C97452D2","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.0001","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"failed","created_at":"2018-05-22T15:20:02+02:00","blockchain_txid":null},{"tid":"TID3B9FDA1930","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.001","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"failed","created_at":"2018-05-22T15:15:49+02:00","blockchain_txid":null},{"tid":"TID594D34F6A4","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.001","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"failed","created_at":"2018-05-22T15:02:16+02:00","blockchain_txid":null},{"tid":"TID1210580517","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.001","fee":"0.0","rid":"0x9bc14c55139501643b62d49c9e8def17029ad418","state":"failed","created_at":"2018-05-22T14:30:20+02:00","blockchain_txid":null},{"tid":"TID3AB8382BFD","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.001","fee":"0.0","rid":"0x9bc14c55139501643b62d49c9e8def17029ad418","state":"failed","created_at":"2018-05-22T14:29:56+02:00","blockchain_txid":null},{"tid":"TIDEFED7967E3","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.011111","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"failed","created_at":"2018-05-22T14:10:06+02:00","blockchain_txid":null},{"tid":"TID7A1604DE36","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.005","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"failed","created_at":"2018-05-22T14:04:18+02:00","blockchain_txid":null},{"tid":"TIDFADB6097E2","uid":"ID9B00C32556","currency":"trst","type":"coin","amount":"0.001","fee":"0.0","rid":"0x55da9f390a747b5845752acb65a6e2e7a917a1fc","state":"failed","created_at":"2018-05-22T13:57:49+02:00","blockchain_txid":null}]'
+    http_version: 
+  recorded_at: Mon, 02 Jul 2018 11:42:46 GMT
+recorded_with: VCR 4.0.0
