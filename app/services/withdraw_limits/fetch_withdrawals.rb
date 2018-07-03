@@ -4,24 +4,28 @@ require 'dry/monads/all'
 
 module WithdrawLimits
   # Responsible for fetching user withdrawals for last 24h
-  class FetchWithdrawals < :ManagementAPIv1Client
+  class FetchWithdrawals < ::ManagementAPIv1Client
     include Dry::Monads
     include Dry::Monads::Do.for(:call)
 
     def initialize(*)
       super ENV.fetch('PEATIO_ROOT_URL'),
             Rails.configuration.x.peatio_management_api_v1_configuration
+      self.action = :read_withdraws
     end
 
-    def call(args = {})
-      payload = yield make_payload(args)
-      jwt     = yield make_jwt(payload)
-      respone = yield do_request(jwt)
-      # select 24 h withdrawa
+    def call(uid, currency)
+      payload     = yield make_payload(uid: uid, currency: currency)
+      jwt         = yield make_jwt(payload)
+      withdrawals = yield do_request(jwt)
+      withdrawals = yield select_last_24h(withdrawals)
+
+      Success(withdrawals)
     end
 
     private
 
+    # TODO: add non error states
     def make_payload(args)
       Try() { args }
         .fmap { |a| a.slice(:uid, :currency) }
@@ -39,27 +43,19 @@ module WithdrawLimits
 
       if result.error?
         Rails.logger.debug(result)
-        return Failure(:failed_to_fetch_withdrawals_error_raised)
-      end
-
-      unless result.value!.success?
-        result.value!.log_failure
-        return Failure(:failed_to_fetch_withdrawals_response_unsuccessfull)
+        return Failure(:failed_to_fetch_withdrawals)
       end
 
       Success(result.value!)
     end
 
-    def process_response(response)
-      Try() {response}
-        .fmap(&:body)
+    def select_last_24h(withdrawals)
+      range = Time.current.yield_self { |now| (now.to_i..(now - 24.hours).to_i) }
+
+      Try() { withdrawals }
+        .fmap do |wls|
+          wls.select { |w| range.cover?(Time.parse(w['created_at']).to_i) }
+        end.to_result
     end
   end
 end
-
-
-# optional :uid,      type: String,  desc: 'The shared user ID.'
-# optional :currency, type: String,  values: -> { Currency.codes(bothcase: true) }, desc: 'The currency code.'
-# optional :page,     type: Integer, default: 1,   integer_gt_zero: true, desc: 'The page number (defaults to 1).'
-# optional :limit,    type: Integer, default: 100, range: 1..1000, desc: 'The number of objects per page (defaults to 100, maximum is 1000).'
-# optional :state,    type: String,  values: -> { Withdraw::STATES.map(&:to_s) }, desc: 'The state to filter by.'

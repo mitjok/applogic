@@ -9,11 +9,18 @@ module APIv1
     end
 
     def current_user
-      key = 'api.v1.authenticated_uid' # JWT authentication provides user uid.
-      return unless env.key?(key)
+      return unless env.key?(auth_env_key)
 
-      User.find_by(uid: env[key])
+      User.find_by(uid: env[auth_env_key])
     end
     memoize :current_user
+
+    def auth_env_key
+      'api.v1.authenticated_uid'
+    end
+
+    def current_uid
+      env[auth_env_key]
+    end
   end
 end

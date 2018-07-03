@@ -144,5 +144,36 @@ describe APIv1::Withdraw, type: :request do
         end
       end
     end
+
+    context 'daily withdrawal check' do
+      let(:check) do
+        check_obj = instance_double(WithdrawLimits::DailyLimitCheck)
+        allow(WithdrawLimits::DailyLimitCheck).to receive(:new).and_return(check_obj)
+        check_obj
+      end
+
+      context 'when fails' do
+        before do
+          allow(check).to receive(:call).with(user.uid).and_return(false)
+        end
+
+        it 'should respond with error' do
+          do_request
+          expect(response.status).to eq 422
+          expect(json_body).to eq('error' => '24 hour withdraw limit exceeded')
+        end
+      end
+
+      context 'when pass' do
+        before do
+          allow(check).to receive(:call).with(user.uid).and_return(true)
+        end
+
+        it 'should allow api request to run' do
+          expect { do_request }.to_not raise_error
+          expect(response.status).to eq 201
+        end
+      end
+    end
   end
 end
