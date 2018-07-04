@@ -2,16 +2,16 @@
 
 module APIv1
   class Withdraw < Grape::API
-    helpers do
-      def check_withdraw_limits
-        return if WithdrawLimits::DailyLimitCheck.new.call(current_uid)
-
-        throw(:error, message: '24 hour withdraw limit exceeded', status: 422)
-      end
-    end
+    # helpers do
+    #   def check_withdraw_limits
+    #     return if WithdrawLimits::DailyLimitCheck.new.call(current_user, )
+    #
+    #     throw(:error, message: '24 hour withdraw limit exceeded', status: 422)
+    #   end
+    # end
 
     before { authenticate! }
-    before { check_withdraw_limits }
+    # before { check_withdraw_limits }
 
     desc 'Request a withdraw'
     params do
@@ -29,6 +29,10 @@ module APIv1
                desc: 'The beneficiary ID or wallet address on the Blockchain.'
     end
     post '/withdraws' do
+      unless WithdrawLimits::DailyLimitCheck.new.call(current_user, params[:currency])
+        raise DailyWithdrawLimitError
+      end
+
       Peatio::ManagementAPIv1Client.new.create_withdraw(
         uid:      env['api.v1.authenticated_uid'],
         currency: params[:currency],

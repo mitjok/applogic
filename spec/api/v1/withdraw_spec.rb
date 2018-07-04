@@ -154,19 +154,21 @@ describe APIv1::Withdraw, type: :request do
 
       context 'when fails' do
         before do
-          allow(check).to receive(:call).with(user.uid).and_return(false)
+          allow(check).to receive(:call).with(user, 'BTC').and_return(false)
         end
 
         it 'should respond with error' do
           do_request
           expect(response.status).to eq 422
-          expect(json_body).to eq('error' => '24 hour withdraw limit exceeded')
+          expect(json_body).to eq(
+            'error' => { 'code' => 2002, 'message' => '24 hour withdraw limit exceeded' }
+          )
         end
       end
 
       context 'when pass' do
         before do
-          allow(check).to receive(:call).with(user.uid).and_return(true)
+          allow(check).to receive(:call).with(user, 'BTC').and_return(true)
         end
 
         it 'should allow api request to run' do

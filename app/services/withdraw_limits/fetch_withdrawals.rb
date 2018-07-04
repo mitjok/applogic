@@ -25,11 +25,10 @@ module WithdrawLimits
 
     private
 
-    # TODO: add non error states
     def make_payload(args)
       Try() { args }
         .fmap { |a| a.slice(:uid, :currency) }
-        .fmap { |a| a.merge(limit: 1000) }
+        .fmap { |a| a.merge(limit: 1000, state: 'succeed') }
         .fmap { |a| payload(a) }
         .to_result
     end
@@ -50,11 +49,13 @@ module WithdrawLimits
     end
 
     def select_last_24h(withdrawals)
-      range = Time.current.yield_self { |now| (now.to_i..(now - 24.hours).to_i) }
+      range = Time.current.yield_self { |now| ((now - 24.hours).to_i..now.to_i) }
 
       Try() { withdrawals }
         .fmap do |wls|
-          wls.select { |w| range.cover?(Time.parse(w['created_at']).to_i) }
+          wls.select do |w|
+            range.cover?(Time.parse(w['created_at']).to_i)
+          end
         end.to_result
     end
   end

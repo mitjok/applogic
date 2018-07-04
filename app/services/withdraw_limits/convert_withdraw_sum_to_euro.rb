@@ -1,15 +1,18 @@
 # frozen_string_literal: true
 
-require 'dry/monads/do'
+require 'dry/monads/all'
 
 module WithdrawLimits
-  # Responsible for fetching supported coin prices from third-party service
+  # Responsible for converting 24 h withdrawals to EURO
   class ConvertWithdrawSumToEuro
+    include Dry::Monads
     include Dry::Monads::Do.for(:call)
 
-    def call(code, withdrawals)
-      price = yield FetchCoinPrice.new.call(code: code)
-      price * sum(withdrawals)
+    def call(uid, code)
+      withdrawals = yield FetchWithdrawals.new.call(uid, code)
+      price       = yield FetchCoinPrice.new.call(code: code)
+
+      Success(price * sum(withdrawals))
     end
 
     private

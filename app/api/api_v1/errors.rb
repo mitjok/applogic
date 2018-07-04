@@ -41,4 +41,13 @@ module APIv1
       super code: 2001, text: 'Authorization failed', status: 401
     end
   end
+
+  class DailyWithdrawLimitError < Error
+    attr_reader :reason
+
+    def initialize(reason = nil)
+      @reason = reason
+      super code: 2002, text: '24 hour withdraw limit exceeded', status: 422
+    end
+  end
 end
