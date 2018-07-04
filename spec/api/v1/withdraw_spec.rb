@@ -11,7 +11,10 @@ describe APIv1::Withdraw, type: :request do
     set_security_configuration(:barong, actions: barong_actions)
   end
   let(:peatio_actions) do
-    { write_withdraws: { required_signatures: %i[applogic] } }
+    {
+      write_withdraws: { required_signatures: %i[applogic] },
+      read_withdraws:  { required_signatures: %i[applogic] }
+    }
   end
   let(:barong_actions) do
     { otp_sign: { required_signatures: %i[applogic] } }
@@ -50,11 +53,11 @@ describe APIv1::Withdraw, type: :request do
     context 'when action doesn\'t require barong totp' do
       before do
         stub_request(:post, "#{ENV.fetch('BARONG_ROOT_URL')}/management_api/v1/otp/sign")
-            .to_raise(Faraday::Error)
+          .to_raise(Faraday::Error)
       end
 
       it 'doesn\'t send request to barong' do
-        expect{ do_request }.to_not raise_error
+        expect { do_request }.to_not raise_error
       end
 
       it 'sends withdrawal request to peatio' do
@@ -70,6 +73,10 @@ describe APIv1::Withdraw, type: :request do
           write_withdraws: {
             required_signatures: %i[applogic],
             requires_barong_totp: true
+          },
+          read_withdraws:  {
+            required_signatures: %i[applogic],
+            requires_barong_totp: false
           }
         }
       end
@@ -140,7 +147,7 @@ describe APIv1::Withdraw, type: :request do
         it 'responds with external services error message' do
           do_request
           expect(response.status).to eq 503
-          expect(json_body).to eq({'error' => 'External services error'})
+          expect(json_body).to eq('error' => 'External services error')
         end
       end
     end

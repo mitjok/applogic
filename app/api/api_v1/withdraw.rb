@@ -2,16 +2,7 @@
 
 module APIv1
   class Withdraw < Grape::API
-    # helpers do
-    #   def check_withdraw_limits
-    #     return if WithdrawLimits::DailyLimitCheck.new.call(current_user, )
-    #
-    #     throw(:error, message: '24 hour withdraw limit exceeded', status: 422)
-    #   end
-    # end
-
     before { authenticate! }
-    # before { check_withdraw_limits }
 
     desc 'Request a withdraw'
     params do

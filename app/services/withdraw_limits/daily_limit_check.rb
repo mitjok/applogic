@@ -9,9 +9,12 @@ module WithdrawLimits
 
       case user.level
       when 1
-        funds <= WITHDRAW_LIMIT_LEVEL_1
+        funds <= ENV.fetch('WITHDRAW_LIMIT_LEVEL_1')
       when 2
-        funds <= WITHDRAW_LIMIT_LEVEL_2
+        funds <= ENV.fetch('WITHDRAW_LIMIT_LEVEL_2')
+      when 3
+        # FIXME: manual set value should be here, stub for now
+        true
       else
         false
       end
